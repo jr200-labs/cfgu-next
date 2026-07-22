@@ -11,6 +11,15 @@ on:
     types: [release-published]
   workflow_dispatch:
     inputs:
+      runner:
+        description: Runner pool
+        required: false
+        type: choice
+        default: configured
+        options:
+          - configured
+          - self-hosted
+          - github-hosted
       checkout-ref:
         description: "checkout ref"
         required: false
@@ -26,6 +35,11 @@ on:
         required: false
         type: string
         default: ""
+      preview-id:
+        description: "Publish an immutable -pr preview without changing the latest tag"
+        required: false
+        type: string
+        default: ""
 
 permissions:
   contents: read
@@ -36,6 +50,7 @@ jobs:
     with:
       event_name: ${{ toJson(github.event_name) }}
       event: ${{ toJson(github.event) }}
+      runner: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.runner == 'self-hosted' && 'self-hosted' || github.event_name == 'workflow_dispatch' && github.event.inputs.runner == 'github-hosted' && 'ubuntu-latest' || fromJSON(vars.RUNNER_PROFILES)[vars.RUNNER_PROFILE].default }}
 
   main:
     needs: configure
@@ -44,5 +59,7 @@ jobs:
       checkout-ref: ${{ fromJson(needs.configure.outputs.context).checkout-ref }}
       pnpm-run-test: ${{ github.event.inputs.pnpm-run-test || 'true' }}
       pnpm-publish-args: ${{ github.event.inputs.pnpm-publish-args || '' }}
+      preview-id: ${{ github.event.inputs.preview-id || '' }}
+      runner: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.runner == 'self-hosted' && 'self-hosted' || github.event_name == 'workflow_dispatch' && github.event.inputs.runner == 'github-hosted' && 'ubuntu-latest' || fromJSON(vars.RUNNER_PROFILES)[vars.RUNNER_PROFILE].default }}
     secrets:
       npmjs_api_token: ${{ secrets.NPMJS_API_TOKEN }}
