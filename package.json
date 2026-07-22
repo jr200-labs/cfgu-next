@@ -1,7 +1,7 @@
 {
   "name": "@jr200-labs/cfgu-next",
   "description": "Configu CLI fork with yaml-file multi-path support",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "author": {
     "name": "jr200-labs",
     "url": "https://github.com/jr200-labs"
