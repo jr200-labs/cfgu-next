@@ -10,7 +10,7 @@
   "dependencies": {
     "@configu/file": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "csv": "^6.3.8"
+    "csv": "^6.6.1"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",

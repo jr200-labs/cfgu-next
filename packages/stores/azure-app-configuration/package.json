@@ -8,8 +8,8 @@
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@azure/app-configuration": "^1.10.0",
-    "@azure/identity": "^4.13.0",
+    "@azure/app-configuration": "^1.12.1",
+    "@azure/identity": "^4.13.1",
     "@configu/sdk": "workspace:*"
   },
   "devDependencies": {},

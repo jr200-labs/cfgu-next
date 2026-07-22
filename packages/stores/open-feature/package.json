@@ -9,7 +9,7 @@
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
     "@configu/sdk": "workspace:*",
-    "@openfeature/server-sdk": "^1.7.4"
+    "@openfeature/server-sdk": "^1.22.0"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",

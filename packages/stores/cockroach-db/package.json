@@ -10,10 +10,10 @@
   "dependencies": {
     "@configu/database": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "pg": "^8.13.1"
+    "pg": "^8.22.0"
   },
   "devDependencies": {
-    "typeorm": "^0.3.20"
+    "typeorm": "^0.3.31"
   },
   "exports": "./src/index.ts",
   "files": [

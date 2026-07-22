@@ -10,7 +10,7 @@
   "dependencies": {
     "@configu/key-value": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "axios": "^1.13.2"
+    "axios": "^1.18.1"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",

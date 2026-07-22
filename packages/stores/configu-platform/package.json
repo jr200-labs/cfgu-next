@@ -9,7 +9,7 @@
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
     "@configu/sdk": "workspace:*",
-    "axios": "^1.13.2"
+    "axios": "^1.18.1"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",
