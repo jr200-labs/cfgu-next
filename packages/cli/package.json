@@ -1,46 +1,16 @@
 {
   "name": "@configu/cli",
-  "version": "0.0.0",
   "description": "Configu CLI",
-  "keywords": [
-    "cfgu",
-    "configu",
-    "configu-cli",
-    "configu-command-line"
-  ],
-  "homepage": "https://configu.com",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/configu/configu",
-    "directory": "packages/cli"
-  },
-  "bugs": "https://github.com/configu/configu/issues",
-  "license": "Apache-2.0",
+  "version": "0.0.0",
   "author": {
     "name": "@configu/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
-  "type": "module",
   "bin": {
     "configu": "./dist/configu.cjs"
   },
-  "exports": {
-    "./package.json": "./package.json"
-  },
-  "files": [
-    "/dist"
-  ],
-  "scripts": {
-    "clean": "shx rm -rf dist",
-    "prebuild": "pnpm run clean",
-    "build": "tsx compile.mts",
-    "build:binary": "tsx build.mts",
-    "build:docker": "docker buildx build --progress plain --load -t configu/cli -f ./Dockerfile ../..",
-    "dev": "DEBUG=configu tsx src/configu.ts",
-    "prestart": "pnpm build",
-    "start": "node dist/configu.cjs"
-  },
+  "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
     "@clack/prompts": "^0.11.0",
     "@configu/common": "workspace:*",
@@ -58,5 +28,35 @@
   },
   "devDependencies": {
     "@types/adm-zip": "^0.5.7"
-  }
+  },
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "/dist"
+  ],
+  "homepage": "https://configu.com",
+  "keywords": [
+    "cfgu",
+    "configu",
+    "configu-cli",
+    "configu-command-line"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/configu/configu",
+    "directory": "packages/cli"
+  },
+  "scripts": {
+    "build": "tsx compile.mts",
+    "build:binary": "tsx build.mts",
+    "build:docker": "docker buildx build --progress plain --load -t configu/cli -f ./Dockerfile ../..",
+    "clean": "shx rm -rf dist",
+    "dev": "DEBUG=configu tsx src/configu.ts",
+    "prebuild": "pnpm run clean",
+    "prestart": "pnpm build",
+    "start": "node dist/configu.cjs"
+  },
+  "type": "module"
 }

@@ -3,7 +3,7 @@ import process from 'node:process';
 import { log } from '@clack/prompts';
 import { debug, print } from '@configu/common';
 
-import packageJson from '../package.json' with { type: 'json' };
+import packageJson from '../../../package.json' with { type: 'json' };
 
 // CLI interface Commands
 import { InstallCommand } from './commands/install';

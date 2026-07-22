@@ -2,27 +2,21 @@ packages:
   - 'packages/*'
   - 'packages/stores/*'
   - 'docs'
-
 patchedDependencies:
   '@npmcli/run-script': patches/@npmcli__run-script.patch
   'giget': patches/giget.patch
-
 # https://pnpm.io/settings#cli-settings
 engineStrict: true
 packageManagerStrictVersion: true
 managePackageManagerVersions: false
-
 # https://pnpm.io/settings#build-settings
 childConcurrency: 10
 verifyDepsBeforeRun: warn
-
 # https://pnpm.io/settings#nodejs-settings
 useNodeVersion: 24.11.0
-
 # https://pnpm.io/settings#workspace-settings
 injectWorkspacePackages: true
 disallowWorkspaceCycles: true
-
 # todo: activate after fixing docs and stores versioning
 # https://pnpm.io/settings#strictpeerdependencies
 # strictPeerDependencies: true
@@ -31,3 +25,4 @@ disallowWorkspaceCycles: true
 useStderr: true
 updateNotifier: true
 shellEmulator: true
+minimumReleaseAge: 0

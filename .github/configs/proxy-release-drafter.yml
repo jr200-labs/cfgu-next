@@ -1,6 +1,0 @@
-_extends: configu:.github/configs/release-drafter.yml
-include-paths:
-  - 'packages/proxy/'
-name-template: 'proxy/v$RESOLVED_VERSION'
-tag-template: 'proxy/v$RESOLVED_VERSION'
-tag-prefix: 'proxy/'

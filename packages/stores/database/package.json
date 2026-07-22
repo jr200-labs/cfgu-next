@@ -1,6 +1,23 @@
 {
   "name": "@configu/database",
   "version": "0.0.0",
+  "author": {
+    "name": "@configu/dev",
+    "email": "dev@configu.com",
+    "url": "https://configu.com"
+  },
+  "bugs": "https://github.com/configu/configu/issues",
+  "dependencies": {
+    "@configu/sdk": "workspace:*",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {},
+  "exports": "./src/index.ts",
+  "files": [
+    "src"
+  ],
+  "homepage": "https://configu.com",
   "keywords": [
     "config",
     "config-store",
@@ -8,28 +25,11 @@
     "configu-database",
     "database"
   ],
-  "homepage": "https://configu.com",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/configu/configu",
     "directory": "packages/stores/database"
   },
-  "bugs": "https://github.com/configu/configu/issues",
-  "license": "Apache-2.0",
-  "author": {
-    "name": "@configu/dev",
-    "email": "dev@configu.com",
-    "url": "https://configu.com"
-  },
-  "type": "module",
-  "exports": "./src/index.ts",
-  "files": [
-    "src"
-  ],
-  "dependencies": {
-    "@configu/sdk": "workspace:*",
-    "reflect-metadata": "^0.2.2",
-    "typeorm": "^0.3.20"
-  },
-  "devDependencies": {}
+  "type": "module"
 }

@@ -1,69 +1,18 @@
 {
-  "name": "@configu/configu",
-  "version": "0.0.0",
-  "description": "Configu OSS monorepo powered by TypeScript, Node.js and pnpm",
-  "keywords": [
-    "cfgu",
-    "config",
-    "configu",
-    "configuration",
-    "env",
-    "environment",
-    "environment variable",
-    "variable"
-  ],
-  "homepage": "https://github.com/configu/configu#readme",
-  "repository": "github:configu/configu",
-  "license": "Apache-2.0",
+  "name": "@jr200-labs/cfgu-next",
+  "description": "Configu CLI fork with yaml-file multi-path support",
+  "version": "1.6.1",
   "author": {
-    "name": "@configu/dev",
-    "email": "dev@configu.com",
-    "url": "https://configu.com"
+    "name": "jr200-labs",
+    "url": "https://github.com/jr200-labs"
   },
-  "packageManager": "pnpm@10.21.0",
-  "devEngines": {
-    "runtime": {
-      "name": "node",
-      "version": "24.11.0",
-      "onFail": "error"
-    },
-    "packageManager": {
-      "name": "pnpm",
-      "version": "10.21.0",
-      "onFail": "error"
-    }
+  "bin": {
+    "configu": "./packages/cli/dist/configu.cjs"
   },
   "config": {
     "format": ".",
     "lint": ".",
     "test": "packages/**/src/**/*.test.ts"
-  },
-  "scripts": {
-    "pkg:art": "shx cat docs/images/ascii-art.txt",
-    "pkg:hooks": "husky",
-    "pkg:config": "tsx prepare.mts",
-    "prepare": "pnpm pkg:art && pnpm pkg:hooks && pnpm pkg:config && pnpm build",
-    "clean": "pnpm -r clean",
-    "clean:cache": "shx rm -rf **/node_modules **/dist .eslintcache lcov.info",
-    "clean:all": "pnpm clean && pnpm clean:cache",
-    "deps:peer": "pnpm install --resolution-only",
-    "deps:check": "syncpack lint && pnpm deps:peer",
-    "deps:fix": "syncpack format && syncpack fix-mismatches",
-    "format": "prettier",
-    "format:check": "pnpm format --check $npm_package_config_format",
-    "format:fix": "pnpm format --write $npm_package_config_format",
-    "type:check": "tsc --build",
-    "lint": "eslint --cache",
-    "lint:check": "pnpm lint --quiet $npm_package_config_lint",
-    "lint:fix": "pnpm lint --fix $npm_package_config_lint",
-    "test": "tsx --test $npm_package_config_test",
-    "test:cov": "tsx --test --experimental-test-coverage --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=lcov.info $npm_package_config_test",
-    "test:watch": "tsx --test --watch $npm_package_config_test",
-    "build": "pnpm build:libs && pnpm install --ignore-scripts && pnpm build:interfaces",
-    "build:libs": "pnpm --filter \"@configu/sdk\" --filter \"@configu/formatters\" build",
-    "build:interfaces": "pnpm --filter \"@configu/schema\" --filter \"@configu/cli\" --filter \"@configu/proxy\" build",
-    "build:docs": "pnpm --filter \"@configu/docs\" build",
-    "start": "pnpm prepare:art"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.2",
@@ -81,7 +30,6 @@
     "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-prettier": "^5.5.5",
     "globals": "^17.0.0",
-    "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.8.1",
     "shx": "^0.4.0",
@@ -90,5 +38,64 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.1",
     "zx": "^8.8.5"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "24.11.0",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "10.21.0",
+      "onFail": "error"
+    }
+  },
+  "files": [
+    "packages/cli/dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/jr200-labs/cfgu-next#readme",
+  "keywords": [
+    "cfgu",
+    "config",
+    "configu",
+    "configuration",
+    "env",
+    "environment",
+    "environment variable",
+    "variable"
+  ],
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@10.21.0",
+  "repository": "github:jr200-labs/cfgu-next",
+  "scripts": {
+    "build": "pnpm build:libs && pnpm install --ignore-scripts && pnpm build:interfaces",
+    "build:docs": "pnpm --filter \"@configu/docs\" build",
+    "build:interfaces": "pnpm --filter \"@configu/schema\" --filter \"@configu/cli\" --filter \"@configu/proxy\" build",
+    "build:libs": "pnpm --filter \"@configu/sdk\" --filter \"@configu/formatters\" build",
+    "clean": "pnpm -r clean",
+    "clean:all": "pnpm clean && pnpm clean:cache",
+    "clean:cache": "shx rm -rf **/node_modules **/dist .eslintcache lcov.info",
+    "deps:check": "syncpack lint && pnpm deps:peer",
+    "deps:fix": "syncpack format && syncpack fix-mismatches",
+    "deps:peer": "pnpm install --resolution-only",
+    "format": "prettier",
+    "format:check": "pnpm format --check $npm_package_config_format",
+    "format:fix": "pnpm format --write $npm_package_config_format",
+    "lint": "eslint --cache",
+    "lint:check": "pnpm lint --quiet $npm_package_config_lint",
+    "lint:fix": "pnpm lint --fix $npm_package_config_lint",
+    "pkg:art": "shx cat docs/images/ascii-art.txt",
+    "pkg:config": "tsx prepare.mts",
+    "prepare": "pnpm pkg:art && pnpm pkg:config && pnpm build",
+    "prettier": "pnpm format",
+    "start": "pnpm prepare:art",
+    "test": "tsx --test $npm_package_config_test",
+    "test:cov": "tsx --test --experimental-test-coverage --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=lcov.info $npm_package_config_test",
+    "test:run": "pnpm test",
+    "test:watch": "tsx --test --watch $npm_package_config_test",
+    "type:check": "tsc --build"
   }
 }

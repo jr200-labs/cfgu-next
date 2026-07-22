@@ -1,7 +1,24 @@
 {
   "name": "@configu/schema",
-  "version": "0.0.0",
   "description": "Configu DSL JSON Schema",
+  "version": "0.0.0",
+  "author": {
+    "name": "@configu/dev",
+    "email": "dev@configu.com",
+    "url": "https://configu.com"
+  },
+  "bugs": "https://github.com/configu/configu/issues",
+  "dependencies": {
+    "@configu/common": "workspace:*",
+    "@configu/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "ajv-cli": "^5.0.0"
+  },
+  "files": [
+    "/*.json"
+  ],
+  "homepage": "https://configu.com",
   "keywords": [
     "configu-json-schema",
     "configu-schema",
@@ -9,34 +26,17 @@
     "json-schema",
     "schema"
   ],
-  "homepage": "https://configu.com",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/configu/configu",
     "directory": "packages/schema"
   },
-  "bugs": "https://github.com/configu/configu/issues",
-  "license": "Apache-2.0",
-  "author": {
-    "name": "@configu/dev",
-    "email": "dev@configu.com",
-    "url": "https://configu.com"
-  },
-  "files": [
-    "/*.json"
-  ],
   "scripts": {
-    "clean": "shx rm -f .cfgu.json .configu.json",
     "build": "tsx build.mts",
+    "clean": "shx rm -f .cfgu.json .configu.json",
     "test": "pnpm \"/^test:.*/\"",
     "test:cfgu": "ajv test -s .cfgu.json -d \"data/*.cfgu.*\" --valid --allow-union-types --all-errors --verbose",
     "test:configu": "ajv test -s .configu.json -d \"data/.configu.*\" --valid --allow-union-types --all-errors --verbose"
-  },
-  "dependencies": {
-    "@configu/common": "workspace:*",
-    "@configu/sdk": "workspace:*"
-  },
-  "devDependencies": {
-    "ajv-cli": "^5.0.0"
   }
 }

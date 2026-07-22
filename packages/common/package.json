@@ -1,46 +1,13 @@
 {
   "name": "@configu/common",
-  "version": "0.0.0",
   "description": "Configu Node.js Common Library",
-  "keywords": [
-    "cfgu",
-    "configu",
-    "configu-common",
-    "configu-lib",
-    "configu-node"
-  ],
-  "homepage": "https://configu.com",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/configu/configu",
-    "directory": "packages/common"
-  },
-  "bugs": "https://github.com/configu/configu/issues",
-  "license": "Apache-2.0",
+  "version": "0.0.0",
   "author": {
     "name": "@configu/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
-  "engines": {
-    "node": "24.11.0"
-  },
-  "type": "module",
-  "types": "./src/index.ts",
-  "module": "./src/index.ts",
-  "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "import": {
-        "types": "./src/index.ts",
-        "default": "./src/index.ts"
-      }
-    }
-  },
-  "files": [
-    "src"
-  ],
-  "scripts": {},
+  "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
     "@configu/configu-platform": "workspace:*",
     "@configu/json-file": "workspace:*",
@@ -71,5 +38,38 @@
     "@types/npmcli__arborist": "^6.3.1",
     "@types/npmcli__package-json": "^4.0.4",
     "@types/semver": "^7.7.1"
-  }
+  },
+  "engines": {
+    "node": "24.11.0"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./src/index.ts",
+        "default": "./src/index.ts"
+      }
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "homepage": "https://configu.com",
+  "keywords": [
+    "cfgu",
+    "configu",
+    "configu-common",
+    "configu-lib",
+    "configu-node"
+  ],
+  "license": "Apache-2.0",
+  "module": "./src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/configu/configu",
+    "directory": "packages/common"
+  },
+  "scripts": {},
+  "type": "module",
+  "types": "./src/index.ts"
 }

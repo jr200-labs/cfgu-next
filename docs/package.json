@@ -1,36 +1,36 @@
 {
   "name": "@configu/docs",
-  "version": "0.0.0",
   "description": "Configu documentation portal",
-  "keywords": [
-    "configu",
-    "configu-docs",
-    "configu-documentation",
-    "docs"
-  ],
-  "homepage": "https://docs.configu.com",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/configu/configu",
-    "directory": "docs"
-  },
-  "bugs": "https://github.com/configu/configu/issues",
-  "license": "Apache-2.0",
+  "version": "0.0.0",
   "author": {
     "name": "@configu/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
-  "scripts": {
-    "build": "zx prepare.mjs",
-    "dev": "pnpm build && mintlify dev",
-    "start": "pnpm dev"
-  },
+  "bugs": "https://github.com/configu/configu/issues",
   "devDependencies": {
     "lodash": "^4.17.21",
     "mintlify": "^4.0.168",
     "typedoc": "^0.25.13",
     "typedoc-plugin-frontmatter": "^1.0.0",
     "typedoc-plugin-markdown": "^4.0.3"
+  },
+  "homepage": "https://docs.configu.com",
+  "keywords": [
+    "configu",
+    "configu-docs",
+    "configu-documentation",
+    "docs"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/configu/configu",
+    "directory": "docs"
+  },
+  "scripts": {
+    "build": "zx prepare.mjs",
+    "dev": "pnpm build && mintlify dev",
+    "start": "pnpm dev"
   }
 }
