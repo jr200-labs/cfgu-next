@@ -10,11 +10,11 @@
   "dependencies": {
     "@configu/open-feature": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "@openfeature/server-sdk": "^1.7.4",
-    "cloudbees-openfeature-provider-node": "^1.0.0"
+    "@openfeature/server-sdk": "^1.22.0",
+    "cloudbees-openfeature-provider-node": "^1.0.1"
   },
   "devDependencies": {
-    "@types/rox-node": "^5.0.3"
+    "@types/rox-node": "^5.0.5"
   },
   "exports": "./src/index.ts",
   "files": [

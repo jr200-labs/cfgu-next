@@ -10,7 +10,7 @@
   "dependencies": {
     "@configu/key-value": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "@google-cloud/secret-manager": "^5.4.0"
+    "@google-cloud/secret-manager": "^5.6.0"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",

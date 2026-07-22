@@ -8,8 +8,8 @@
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@azure/identity": "^4.13.0",
-    "@azure/keyvault-secrets": "^4.10.0",
+    "@azure/identity": "^4.13.1",
+    "@azure/keyvault-secrets": "^4.11.2",
     "@configu/key-value": "workspace:*",
     "@configu/sdk": "workspace:*"
   },

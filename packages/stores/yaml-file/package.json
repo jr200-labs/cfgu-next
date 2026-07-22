@@ -10,7 +10,7 @@
   "dependencies": {
     "@configu/object": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "yaml": "^2.8.2"
+    "yaml": "^2.9.0"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",
