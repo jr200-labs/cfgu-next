@@ -16,7 +16,7 @@
     "@fastify/helmet": "^11.1.1",
     "@fastify/swagger": "^8.15.0",
     "@fastify/swagger-ui": "^4.2.0",
-    "@gquittet/graceful-server": "^4.0.9",
+    "@gquittet/graceful-server": "^6.0.10",
     "@scalar/fastify-api-reference": "^1.63.0",
     "cosmiconfig": "^9.0.2",
     "fastify": "^4.29.1",

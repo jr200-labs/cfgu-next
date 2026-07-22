@@ -278,8 +278,8 @@ importers:
         specifier: ^4.2.0
         version: 4.2.0
       '@gquittet/graceful-server':
-        specifier: ^4.0.9
-        version: 4.0.9
+        specifier: ^6.0.10
+        version: 6.0.10
       '@scalar/fastify-api-reference':
         specifier: ^1.63.0
         version: 1.63.0
@@ -1524,9 +1524,9 @@ packages:
     resolution: {integrity: sha512-TUuzu8CchbCd2cXd0pYJSXvDBsEVX3wpZu4iOpdLrXLbYbvCDKhdjDyOyC7vo14qQRE9J6Z0AL2hfX08H+fh3A==}
     engines: {node: '>=18'}
 
-  '@gquittet/graceful-server@4.0.9':
-    resolution: {integrity: sha512-v0s6HHR30ZaX8bskkGT5vTwpxk6ltFYiWn+h+epMo5RxjbbBjkzVNvG7DSdDogqrWGxwhjoYLzUAj5RE1eydUg==}
-    engines: {node: '>=14.0.0'}
+  '@gquittet/graceful-server@6.0.10':
+    resolution: {integrity: sha512-22rSSYmU8lhnPnuh2vR+ROCjr6+pHulY7UY5iK/Y7dz9AX3wEzyHLq7H0Pj6Al0UFXmG2l8tl1IDOsipgemWKA==}
+    engines: {node: '>=20.0.0'}
 
   '@grpc/grpc-js@1.14.0':
     resolution: {integrity: sha512-N8Jx6PaYzcTRNzirReJCtADVoq4z7+1KQ4E70jTg/koQiMoUSN1kbNjPOqpPbhMFhfU1/l7ixspPl8dNY+FoUg==}
@@ -9228,7 +9228,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@gquittet/graceful-server@4.0.9':
+  '@gquittet/graceful-server@6.0.10':
     optionalDependencies:
       fsevents: 2.3.3
 
