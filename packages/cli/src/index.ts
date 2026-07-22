@@ -29,7 +29,7 @@ export async function run(argv: string[]) {
   debug('argv', argv);
 
   const cli = new Cli({
-    binaryName: 'configu',
+    binaryName: 'cfgu-next',
     binaryLabel: packageJson.name,
     binaryVersion: packageJson.version,
   });

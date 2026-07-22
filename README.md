@@ -8,6 +8,8 @@ It is published to npm as [`@jr200-labs/cfgu-next`](https://www.npmjs.com/packag
 pnpm dlx @jr200-labs/cfgu-next
 ```
 
+After installation, run `cfgu-next --help`.
+
 ## Fork status
 
 This repository was forked from [configu/configu](https://github.com/configu/configu) on **22-June-2026**. It retains the upstream project history and is licensed under Apache-2.0.

@@ -7,7 +7,7 @@
     "url": "https://github.com/jr200-labs"
   },
   "bin": {
-    "configu": "./packages/cli/dist/configu.cjs"
+    "cfgu-next": "./packages/cli/dist/configu.cjs"
   },
   "config": {
     "format": ".",
