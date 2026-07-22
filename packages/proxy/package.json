@@ -1,50 +1,13 @@
 {
   "name": "@configu/proxy",
-  "version": "0.0.0",
   "description": "Configu Proxy Server",
-  "keywords": [
-    "cfgu",
-    "configu",
-    "configu-proxy",
-    "configu-proxy-server",
-    "configu-server"
-  ],
-  "homepage": "https://github.com/configu/configu#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/configu/configu",
-    "directory": "packages/proxy"
-  },
-  "bugs": "https://github.com/configu/configu/issues",
-  "license": "Apache-2.0",
+  "version": "0.0.0",
   "author": {
     "name": "@configu/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
-  "engines": {
-    "node": ">=v20.0.0"
-  },
-  "type": "module",
-  "types": "./src/index.ts",
-  "module": "./src/index.ts",
-  "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "import": {
-        "types": "./src/index.ts",
-        "default": "./src/index.ts"
-      }
-    }
-  },
-  "files": [
-    "src"
-  ],
-  "scripts": {
-    "build:docker": "docker build --progress plain -t configu/proxy -f ./Dockerfile ../..",
-    "dev": "DEBUG=configu tsx watch --inspect --clear-screen=false src/index.ts",
-    "start": "tsx src/index.ts"
-  },
+  "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
     "@configu/common": "workspace:*",
     "@configu/sdk": "workspace:*",
@@ -62,5 +25,42 @@
   },
   "devDependencies": {
     "fastify-cli": "^6.2.1"
-  }
+  },
+  "engines": {
+    "node": ">=v20.0.0"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./src/index.ts",
+        "default": "./src/index.ts"
+      }
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "homepage": "https://github.com/configu/configu#readme",
+  "keywords": [
+    "cfgu",
+    "configu",
+    "configu-proxy",
+    "configu-proxy-server",
+    "configu-server"
+  ],
+  "license": "Apache-2.0",
+  "module": "./src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/configu/configu",
+    "directory": "packages/proxy"
+  },
+  "scripts": {
+    "build:docker": "docker build --progress plain -t configu/proxy -f ./Dockerfile ../..",
+    "dev": "DEBUG=configu tsx watch --inspect --clear-screen=false src/index.ts",
+    "start": "tsx src/index.ts"
+  },
+  "type": "module",
+  "types": "./src/index.ts"
 }

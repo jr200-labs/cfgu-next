@@ -1,31 +1,31 @@
 {
   "name": "@configu/localforage",
   "version": "0.0.0",
-  "keywords": [
-    "cfgu",
-    "configu"
-  ],
-  "homepage": "https://configu.com",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/configu/configu",
-    "directory": "packages/stores/localforage"
-  },
-  "bugs": "https://github.com/configu/configu/issues",
-  "license": "Apache-2.0",
   "author": {
     "name": "@configu/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
-  "type": "module",
-  "exports": "./src/index.ts",
-  "files": [
-    "src"
-  ],
+  "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
     "@configu/key-value": "workspace:*",
     "localforage": "^1.10.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "exports": "./src/index.ts",
+  "files": [
+    "src"
+  ],
+  "homepage": "https://configu.com",
+  "keywords": [
+    "cfgu",
+    "configu"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/configu/configu",
+    "directory": "packages/stores/localforage"
+  },
+  "type": "module"
 }

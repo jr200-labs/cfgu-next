@@ -1,56 +1,15 @@
 {
   "name": "@configu/sdk",
-  "version": "0.0.0",
   "description": "Configu TypeScript SDK",
-  "keywords": [
-    "configu-sdk",
-    "configu-ts",
-    "configu-typescript",
-    "sdk",
-    "typescript",
-    "typescript-sdk"
-  ],
-  "homepage": "https://configu.com",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/configu/configu",
-    "directory": "packages/sdk"
-  },
-  "bugs": "https://github.com/configu/configu/issues",
-  "license": "Apache-2.0",
+  "version": "0.0.0",
   "author": {
     "name": "@configu/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
-  "type": "module",
-  "types": "./dist/index.d.ts",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "import": {
-        "types": "./dist/index.d.mts",
-        "default": "./dist/index.mjs"
-      },
-      "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
-      }
-    }
-  },
-  "files": [
-    "dist"
-  ],
+  "bugs": "https://github.com/configu/configu/issues",
   "config": {
     "entry": "./src/index.ts"
-  },
-  "scripts": {
-    "prepublish": "attw --pack .",
-    "clean": "shx rm -rf dist",
-    "prebuild": "pnpm run clean",
-    "build": "tsx ../../build.mts"
   },
   "dependencies": {
     "@segment/ajv-human-errors": "^2.15.0",
@@ -71,5 +30,46 @@
     "@types/chai": "^5.2.2",
     "@types/validator": "^13.15.10",
     "type-fest": "^4.41.0"
-  }
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://configu.com",
+  "keywords": [
+    "configu-sdk",
+    "configu-ts",
+    "configu-typescript",
+    "sdk",
+    "typescript",
+    "typescript-sdk"
+  ],
+  "license": "Apache-2.0",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/configu/configu",
+    "directory": "packages/sdk"
+  },
+  "scripts": {
+    "build": "tsx ../../build.mts",
+    "clean": "shx rm -rf dist",
+    "prebuild": "pnpm run clean",
+    "prepublish": "attw --pack ."
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts"
 }

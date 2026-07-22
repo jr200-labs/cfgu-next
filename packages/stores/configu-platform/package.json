@@ -1,33 +1,33 @@
 {
   "name": "@configu/configu-platform",
   "version": "0.0.0",
+  "author": {
+    "name": "@configu/dev",
+    "email": "dev@configu.com",
+    "url": "https://configu.com"
+  },
+  "bugs": "https://github.com/configu/configu/issues",
+  "dependencies": {
+    "@configu/sdk": "workspace:*",
+    "axios": "^1.13.2"
+  },
+  "devDependencies": {},
+  "exports": "./src/index.ts",
+  "files": [
+    "src"
+  ],
+  "homepage": "https://configu.com",
   "keywords": [
     "cfgu",
     "configu",
     "configu-platform",
     "platform"
   ],
-  "homepage": "https://configu.com",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/configu/configu",
     "directory": "packages/stores/configu"
   },
-  "bugs": "https://github.com/configu/configu/issues",
-  "license": "Apache-2.0",
-  "author": {
-    "name": "@configu/dev",
-    "email": "dev@configu.com",
-    "url": "https://configu.com"
-  },
-  "type": "module",
-  "exports": "./src/index.ts",
-  "files": [
-    "src"
-  ],
-  "dependencies": {
-    "@configu/sdk": "workspace:*",
-    "axios": "^1.13.2"
-  },
-  "devDependencies": {}
+  "type": "module"
 }

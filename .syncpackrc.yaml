@@ -23,15 +23,34 @@
 # Only needed for libs that expose WASM/native-binding packages as
 # peerDependencies with ranges deliberately broader than the dev
 # install pin.
-
-semverGroups:
-  - label: "Default — caret ranges"
-    dependencies:
-      - "**"
-    range: "^"
-
 versionGroups:
+  - label: Use workspace protocol for local packages
+    packages: ['**']
+    dependencies: ['$LOCAL']
+    dependencyTypes: ['!local']
+    pinVersion: workspace:*
+  - label: Ignore example packages
+    packages: ['examples']
+    dependencies: ['**']
+    isIgnored: true
+  - label: Keep type packages in devDependencies
+    dependencies: ['@types/**']
+    dependencyTypes: ['!dev']
+    isBanned: true
+  - label: Ban underscore
+    packages: ['**']
+    dependencies: ['underscore']
+    isBanned: true
   - label: "Ignore example apps — convention: *-react-test workspace packages"
     packages:
       - "*-react-test"
     isIgnored: true
+semverGroups:
+  - label: Use exact Node type versions
+    dependencies: ['@types/node']
+    packages: ['**']
+    range: ''
+  - label: "Default — caret ranges"
+    dependencies:
+      - "**"
+    range: "^"
