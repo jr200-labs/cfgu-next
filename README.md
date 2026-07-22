@@ -27,6 +27,14 @@
   <a target="_blank" href="https://docs.configu.com/guides/hello-world"><strong>Get Started 👋</strong></a> ・ <a target="_blank" href="https://docs.configu.com/"><strong>Explore Docs 📚</strong></a> ・ <a target="_blank" href="https://discord.com/invite/cjSBxnB9z8"><strong>Join Chat 💬</strong></a>
 </p>
 
+## npm package
+
+This fork is published as `@jr200-labs/cfgu-next`:
+
+```sh
+pnpm dlx @jr200-labs/cfgu-next
+```
+
 ## ⭐️ Configu?
 
 <!-- docs/introduction/overview#Configu -->

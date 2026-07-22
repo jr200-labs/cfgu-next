@@ -1,0 +1,20 @@
+name: publish-npm-package
+
+on:
+  repository_dispatch:
+    types: [release-published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    uses: jr200-labs/github-action-templates/.github/workflows/build_publish_npmjs.yaml@master
+    with:
+      checkout-ref: ${{ github.event.client_payload.checkout-ref || 'refs/heads/master' }}
+      node-version: '24.11.0'
+      pnpm-run-test: 'true'
+      preserve-pnpm-workspace: true
+    secrets:
+      npmjs_api_token: ${{ secrets.NPMJS_API_TOKEN }}

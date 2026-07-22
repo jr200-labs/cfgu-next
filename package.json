@@ -1,7 +1,7 @@
 {
-  "name": "@configu/configu",
-  "version": "0.0.0",
-  "description": "Configu OSS monorepo powered by TypeScript, Node.js and pnpm",
+  "name": "@jr200-labs/cfgu-next",
+  "version": "1.6.1",
+  "description": "Configu CLI fork with yaml-file multi-path support",
   "keywords": [
     "cfgu",
     "config",
@@ -12,13 +12,12 @@
     "environment variable",
     "variable"
   ],
-  "homepage": "https://github.com/configu/configu#readme",
-  "repository": "github:configu/configu",
+  "homepage": "https://github.com/jr200-labs/cfgu-next#readme",
+  "repository": "github:jr200-labs/cfgu-next",
   "license": "Apache-2.0",
   "author": {
-    "name": "@configu/dev",
-    "email": "dev@configu.com",
-    "url": "https://configu.com"
+    "name": "jr200-labs",
+    "url": "https://github.com/jr200-labs"
   },
   "packageManager": "pnpm@10.21.0",
   "devEngines": {
@@ -33,6 +32,14 @@
       "onFail": "error"
     }
   },
+  "bin": {
+    "configu": "./packages/cli/dist/configu.cjs"
+  },
+  "files": [
+    "packages/cli/dist",
+    "README.md",
+    "LICENSE"
+  ],
   "config": {
     "format": ".",
     "lint": ".",
@@ -57,12 +64,14 @@
     "lint:check": "pnpm lint --quiet $npm_package_config_lint",
     "lint:fix": "pnpm lint --fix $npm_package_config_lint",
     "test": "tsx --test $npm_package_config_test",
+    "test:run": "pnpm test",
     "test:cov": "tsx --test --experimental-test-coverage --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=lcov.info $npm_package_config_test",
     "test:watch": "tsx --test --watch $npm_package_config_test",
     "build": "pnpm build:libs && pnpm install --ignore-scripts && pnpm build:interfaces",
     "build:libs": "pnpm --filter \"@configu/sdk\" --filter \"@configu/formatters\" build",
     "build:interfaces": "pnpm --filter \"@configu/schema\" --filter \"@configu/cli\" --filter \"@configu/proxy\" build",
     "build:docs": "pnpm --filter \"@configu/docs\" build",
+    "prettier": "pnpm format",
     "start": "pnpm prepare:art"
   },
   "devDependencies": {

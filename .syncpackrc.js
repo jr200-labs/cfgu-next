@@ -45,7 +45,7 @@ const config = {
       packages: ['**'],
       dependencies: Object.keys(rootPackageJson.devDependencies),
       dependencyTypes: ['dev'],
-      snapTo: ['@configu/configu'],
+      snapTo: ['@jr200-labs/cfgu-next'],
     },
     {
       label: 'Ignore issues in @configu/examples',
