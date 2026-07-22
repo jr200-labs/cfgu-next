@@ -1,5 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>jr200-labs/github-action-templates"],
-  "fetchChangeLogs": "off"
+  "packageRules": [
+    {
+      "matchPackageNames": ["node"],
+      "enabled": false
+    }
+  ]
 }
