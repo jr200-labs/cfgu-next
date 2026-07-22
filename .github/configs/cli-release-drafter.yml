@@ -1,6 +1,0 @@
-_extends: configu:.github/configs/release-drafter.yml
-include-paths:
-  - 'packages/cli/'
-name-template: 'cli/v$RESOLVED_VERSION'
-tag-template: 'cli/v$RESOLVED_VERSION'
-tag-prefix: 'cli/'
