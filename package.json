@@ -47,9 +47,8 @@
   },
   "scripts": {
     "pkg:art": "shx cat docs/images/ascii-art.txt",
-    "pkg:hooks": "husky",
     "pkg:config": "tsx prepare.mts",
-    "prepare": "pnpm pkg:art && pnpm pkg:hooks && pnpm pkg:config && pnpm build",
+    "prepare": "pnpm pkg:art && pnpm pkg:config && pnpm build",
     "clean": "pnpm -r clean",
     "clean:cache": "shx rm -rf **/node_modules **/dist .eslintcache lcov.info",
     "clean:all": "pnpm clean && pnpm clean:cache",
@@ -90,7 +89,6 @@
     "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-prettier": "^5.5.5",
     "globals": "^17.0.0",
-    "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.8.1",
     "shx": "^0.4.0",

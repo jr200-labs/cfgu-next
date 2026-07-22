@@ -42,3 +42,4 @@ v8-compile-cache*/
 
 # IDE
 .idea
+.shared/

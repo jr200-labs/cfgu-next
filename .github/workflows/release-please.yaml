@@ -1,3 +1,5 @@
+# GENERATED/SHARED WORKFLOW: copied into consuming repos by sync-shared.
+# Do not edit in consuming repos; change jr200-labs/github-action-templates and sync.
 name: release-please
 
 on:
@@ -5,6 +7,9 @@ on:
     branches: [master]
   workflow_dispatch:
 
+# Only the caller's TOP-LEVEL permissions cascade into reusable
+# workflows. Both writes are needed: contents to push tags + create
+# the GitHub Release, pull-requests to raise the Release PR.
 permissions:
   contents: write
   pull-requests: write
@@ -18,6 +23,11 @@ jobs:
     secrets:
       app_private_key: ${{ secrets.INTEGRATION_APP_PRIVATE_KEY }}
 
+  # Single fan-out point. Always fires when a release is cut; each
+  # artifact-publishing workflow (build-docker-image.yaml, etc.)
+  # listens on the same `release-published` event type. Repos without
+  # any artifact workflows: the dispatch is a no-op. Repos with one or
+  # more: each runs in parallel, independently.
   dispatch-release-published:
     needs: release
     if: needs.release.outputs.release_created == 'true'
@@ -36,4 +46,9 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           event-type: release-published
           client-payload: |-
-            {"checkout-ref":"${{ needs.release.outputs.tag_name }}"}
+            {
+              "ref": "refs/tags/${{ needs.release.outputs.tag_name }}",
+              "sha": "${{ needs.release.outputs.sha }}",
+              "tag": "${{ needs.release.outputs.tag_name }}",
+              "checkout-ref": "${{ needs.release.outputs.tag_name }}"
+            }
