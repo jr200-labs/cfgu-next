@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.7-labs
+# syntax=docker/dockerfile:1.25-labs
 
 # Usage:
 # docker run --rm -i -w $(pwd) -v $(pwd):$(pwd) configu/cli:latest --help
