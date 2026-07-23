@@ -1,5 +1,5 @@
 import { Command, Option } from 'clipanion';
-import { Issuer, errors } from 'openid-client';
+import { discovery, initiateDeviceAuthorization, pollDeviceAuthorizationGrant, ResponseBodyError } from 'openid-client';
 import { log, isCancel, cancel, confirm, select } from '@clack/prompts';
 import open from 'open';
 import { configuPlatformApi, CONFIGU_DEFAULT_API_URL, CONFIGU_DEFAULT_APP_URL } from '@configu/common';
@@ -47,14 +47,12 @@ export class LoginCommand extends BaseCommand {
 
   private async loginWithAuth0() {
     try {
-      const auth0 = await Issuer.discover(`https://${AUTH0_DOMAIN}`);
-      const client = new auth0.Client({
-        client_id: AUTH0_CLIENT_ID,
+      const auth0 = await discovery(new URL(`https://${AUTH0_DOMAIN}`), AUTH0_CLIENT_ID, {
         token_endpoint_auth_method: 'none',
         id_token_signed_response_alg: 'RS256',
       });
 
-      const handle = await client.deviceAuthorization({ audience: AUTH0_API_IDENTIFIER });
+      const handle = await initiateDeviceAuthorization(auth0, { audience: AUTH0_API_IDENTIFIER });
       const { user_code: userCode, verification_uri_complete: verificationUriComplete, expires_in: expiresIn } = handle;
 
       const confirmLogin = await confirm({
@@ -71,7 +69,7 @@ export class LoginCommand extends BaseCommand {
 
       await open(verificationUriComplete);
 
-      const tokens = await handle.poll();
+      const tokens = await pollDeviceAuthorizationGrant(auth0, handle);
 
       if (!tokens?.access_token) {
         throw new Error('no access token');
@@ -105,7 +103,7 @@ export class LoginCommand extends BaseCommand {
           throw new Error('\n\ndevice flow expired');
         }
         default: {
-          if (error instanceof errors.OPError) {
+          if (error instanceof ResponseBodyError) {
             throw new TypeError(`\n\nerror = ${error.error}; error_description = ${error.error_description}`);
           }
           throw error;
