@@ -346,8 +346,8 @@ importers:
         specifier: ^4.18.1
         version: 4.18.1
       ses:
-        specifier: ^1.15.0
-        version: 1.15.0
+        specifier: ^2.2.0
+        version: 2.2.0
       validator:
         specifier: ^13.15.35
         version: 13.15.35
@@ -7260,8 +7260,8 @@ packages:
     resolution: {integrity: sha512-VqpjJZKadQB/PEbEwvFdO43Ax5dFBZ2UECszz8bQ7pi7wt//PWe1P6MN7eCnjsatYtBT6EuiClbjSWP2WrIoTw==}
     engines: {node: '>= 0.8.0'}
 
-  ses@1.15.0:
-    resolution: {integrity: sha512-Y7RvgVXhkwQEqVActNn44QBxB2BCUbPfexAaMiUFjbJkDXDnxPisQC5jYQeWOZ3QBOfecnmLfPn0sQKLiYGBAQ==}
+  ses@2.2.0:
+    resolution: {integrity: sha512-mXZfO9O2bhE9E3INX5Dbqq+eo1Dj6Yeo+r7jas7GYTXRS6fzcZFYf0UbSHcXO7xJuPbhztBskSuSqJLMMoYMVQ==}
 
   set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
@@ -8816,7 +8816,7 @@ snapshots:
       jest-extended: 5.0.3
       json-schema-to-ts: 3.1.1
       lodash: 4.18.1
-      ses: 1.15.0
+      ses: 2.2.0
       validator: 13.15.35
       zod: 4.4.3
     transitivePeerDependencies:
@@ -16506,7 +16506,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ses@1.15.0:
+  ses@2.2.0:
     dependencies:
       '@endo/cache-map': 1.1.0
       '@endo/env-options': 1.1.11
