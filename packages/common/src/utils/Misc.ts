@@ -22,7 +22,7 @@ export { stdenv, semver, diff, flatten, unflatten, JSON, YAML, Dotenv };
 export const validateEngineVersion = () => {
   // todo: find a way to get the repo version smoothly
   const expectedVersion = packageJson.engines.node;
-  const expectedRange = `>=${expectedVersion}`;
+  const expectedRange = expectedVersion;
   const usedVersion = stdenv.nodeVersion ?? process.versions.node;
   debug('Node.js version:', usedVersion);
   if (semver.satisfies(usedVersion, expectedRange)) {
