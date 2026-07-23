@@ -445,8 +445,8 @@ importers:
         version: 8.22.0
     devDependencies:
       typeorm:
-        specifier: ^0.3.31
-        version: 0.3.31(mssql@12.7.0)(pg@8.22.0)(sqlite3@6.0.1)
+        specifier: ^1.1.0
+        version: 1.1.0(mssql@12.7.0)(pg@8.22.0)
 
   packages/stores/configu-platform:
     dependencies:
@@ -478,8 +478,8 @@ importers:
         specifier: ^0.2.2
         version: 0.2.2
       typeorm:
-        specifier: ^0.3.31
-        version: 0.3.31(mssql@12.7.0)(pg@8.22.0)(sqlite3@6.0.1)
+        specifier: ^1.1.0
+        version: 1.1.0(mssql@12.7.0)(pg@8.22.0)
 
   packages/stores/etcd:
     dependencies:
@@ -618,23 +618,23 @@ importers:
         version: 2.18.1
     devDependencies:
       typeorm:
-        specifier: ^0.3.31
-        version: 0.3.31(mssql@12.7.0)(pg@8.22.0)(sqlite3@6.0.1)
+        specifier: ^1.1.0
+        version: 1.1.0(mssql@12.7.0)(pg@8.22.0)
 
   packages/stores/ms-sql:
     dependencies:
       '@configu/database':
         specifier: workspace:*
-        version: link:../database
+        version: file:packages/stores/database(mssql@11.0.1)(pg@8.22.0)(typescript@5.9.3)
       '@configu/sdk':
         specifier: workspace:*
         version: link:../../sdk
       mssql:
-        specifier: ^12.7.0
-        version: 12.7.0
+        specifier: ^11.0.1
+        version: 11.0.1
       typeorm:
-        specifier: ^0.3.31
-        version: 0.3.31(mssql@12.7.0)(pg@8.22.0)(sqlite3@6.0.1)
+        specifier: ^1.1.0
+        version: 1.1.0(mssql@11.0.1)(pg@8.22.0)
 
   packages/stores/my-sql:
     dependencies:
@@ -649,8 +649,8 @@ importers:
         version: 2.18.1
     devDependencies:
       typeorm:
-        specifier: ^0.3.31
-        version: 0.3.31(mssql@12.7.0)(pg@8.22.0)(sqlite3@6.0.1)
+        specifier: ^1.1.0
+        version: 1.1.0(mssql@12.7.0)(pg@8.22.0)
 
   packages/stores/object:
     dependencies:
@@ -680,8 +680,8 @@ importers:
         version: 8.22.0
     devDependencies:
       typeorm:
-        specifier: ^0.3.31
-        version: 0.3.31(mssql@12.7.0)(pg@8.22.0)(sqlite3@6.0.1)
+        specifier: ^1.1.0
+        version: 1.1.0(mssql@12.7.0)(pg@8.22.0)
 
   packages/stores/split:
     dependencies:
@@ -718,8 +718,8 @@ importers:
         version: 6.0.1
     devDependencies:
       typeorm:
-        specifier: ^0.3.31
-        version: 0.3.31(mssql@12.7.0)(pg@8.22.0)(sqlite3@6.0.1)
+        specifier: ^1.1.0
+        version: 1.1.0(mssql@12.7.0)(pg@8.22.0)
 
   packages/stores/toml-file:
     dependencies:
@@ -978,6 +978,9 @@ packages:
 
   '@configu/configu-platform@file:packages/stores/configu-platform':
     resolution: {directory: packages/stores/configu-platform, type: directory}
+
+  '@configu/database@file:packages/stores/database':
+    resolution: {directory: packages/stores/database, type: directory}
 
   '@configu/sdk@file:packages/sdk':
     resolution: {directory: packages/sdk, type: directory}
@@ -1844,6 +1847,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
+  '@js-joda/core@5.7.0':
+    resolution: {integrity: sha512-WBu4ULVVxySLLzK1Ppq+OdfP+adRS4ntmDQT915rzDJ++i95gc2jZkM5B6LWEAwN3lGXpfie3yPABozdD3K3Vg==}
+
   '@js-joda/core@6.1.0':
     resolution: {integrity: sha512-H8NTMRDJqad/leyv/D/A3kSOsf5/58Ydj4DJGDyaCWk9OU/zuZOLhndVffJgQjsgrn5GC0znHMHie7TfvPPG4w==}
 
@@ -2639,6 +2645,9 @@ packages:
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
 
+  '@tediousjs/connection-string@0.5.0':
+    resolution: {integrity: sha512-7qSgZbincDDDFyRweCIEvZULFAw5iz/DeunhvuxpL31nfntX3P4Yd4HkHBRg9H8CdqY1e5WFN1PZIz/REL9MVQ==}
+
   '@tediousjs/connection-string@1.1.0':
     resolution: {integrity: sha512-z9ZBWEG+8pIB5V1zYzlRPXx0oRJ5H7coPnMQK8EZOw03UTPI9Umn6viL36f5w+CuqkKsnCM50RVStpjZmR0Bng==}
 
@@ -3138,10 +3147,6 @@ packages:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
 
-  app-root-path@3.1.0:
-    resolution: {integrity: sha512-biN3PwB2gUtjaYy/isrU3aNWI5w+fAfvHkSvCKeQGxhmYpwKFUxudR3Yya+KqVRHBmEDYh+/lTozYCFbmzX4nA==}
-    engines: {node: '>= 6.0.0'}
-
   arg@5.0.2:
     resolution: {integrity: sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==}
 
@@ -3513,6 +3518,10 @@ packages:
   cliui@8.0.1:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
     engines: {node: '>=12'}
+
+  cliui@9.0.1:
+    resolution: {integrity: sha512-k7ndgKhwoQveBL+/1tqGJYNz097I7WOvwbmmU2AR5+magtbjPWQTS1C5vzGkBC8Ym8UWRzfKUzUUqFLypY4Q+w==}
+    engines: {node: '>=20'}
 
   close-with-grace@2.5.0:
     resolution: {integrity: sha512-MewUtZQU6N4YVHIne63zGtjIQzTINgr6lQp2Y0CutaCw2FsdYahW57dH1Wdz+aV5ipbBzEBZD5znwX2NooS+IA==}
@@ -3895,10 +3904,6 @@ packages:
   dns-socket@4.2.2:
     resolution: {integrity: sha512-BDeBd8najI4/lS00HSKpdFia+OvUMytaVjfzR9n5Lq8MlZRSvtbI+uLtx1+XmQFls5wFU9dssccTmQQ6nfpjdg==}
     engines: {node: '>=6'}
-
-  dotenv@16.6.1:
-    resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
-    engines: {node: '>=12'}
 
   dotenv@17.4.2:
     resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
@@ -5762,6 +5767,11 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
+  mssql@11.0.1:
+    resolution: {integrity: sha512-KlGNsugoT90enKlR8/G36H0kTxPthDhmtNUCwEHvgRza5Cjpjoj+P2X6eMpFUDN7pFrJZsKadL4x990G8RBE1w==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   mssql@12.7.0:
     resolution: {integrity: sha512-J6SJKXi1jYbhHjjooLNtPnX7+s3cq5IJ701Wgy/UW1SXRpgFlJJsYi3IPve9RVgCUkq0Cqv2aaaSJ4IXtIF3mg==}
     engines: {node: '>=18.19.0'}
@@ -6869,11 +6879,6 @@ packages:
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
 
-  sha.js@2.4.12:
-    resolution: {integrity: sha512-8LzC5+bvI45BjpfXU8V5fdU2mfeKiQe1D1gIMn7XUlF3OTUrpdJpPPH4EMAnF0DsHHdSZqCdSss5qCmJKuiO3w==}
-    engines: {node: '>= 0.10'}
-    hasBin: true
-
   sharp-ico@0.1.5:
     resolution: {integrity: sha512-a3jODQl82NPp1d5OYb0wY+oFaPk7AvyxipIowCHk7pBsZCWgbe0yAkU2OOXdoH0ENyANhyOQbs9xkAiRHcF02Q==}
 
@@ -7285,6 +7290,10 @@ packages:
     resolution: {integrity: sha512-51LAVKUSZSVfI05vjPESNc5vwqqZpbXCsU+/+wxlOrUjk2SnFTt97v9ZgQrD4YmxYW1Px6w2KjaDitCfkvgxMQ==}
     engines: {node: '>=8.0.0'}
 
+  tedious@18.6.2:
+    resolution: {integrity: sha512-g7jC56o3MzLkE3lHkaFe2ZdOVFBahq5bsB60/M4NYUbocw/MCrS89IOEQUFr+ba6pb8ZHczZ/VqCyYeYq0xBAg==}
+    engines: {node: '>=18'}
+
   tedious@20.0.0:
     resolution: {integrity: sha512-bTR0aou0Ghucf0ytvZUJjnKHGKDV8tT57jPYtEkSpfTWFe++4uR1wxJLQ4mh5wlSvAYXzmgBxbI0vaE56qigXw==}
     engines: {node: '>=22'}
@@ -7315,16 +7324,16 @@ packages:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
     engines: {node: '>=12.0.0'}
 
+  tinyglobby@0.2.17:
+    resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
+    engines: {node: '>=12.0.0'}
+
   tinyrainbow@3.1.0:
     resolution: {integrity: sha512-Bf+ILmBgretUrdJxzXM0SgXLZ3XfiaUuOj/IKQHuTXip+05Xn+uyEYdVg0kYDipTBcLrCVyUzAPz7QmArb0mmw==}
     engines: {node: '>=14.0.0'}
 
   tmpl@1.0.5:
     resolution: {integrity: sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw==}
-
-  to-buffer@1.2.2:
-    resolution: {integrity: sha512-db0E3UJjcFhpDhAF4tLo03oli3pwl3dbnzXOUIlRKrp+ldk/VUxzpWYZENsw2SZiuBjHAk7DfB0VU7NKdpb6sw==}
-    engines: {node: '>= 0.4'}
 
   to-data-view@1.1.0:
     resolution: {integrity: sha512-1eAdufMg6mwgmlojAx3QeMnzB/BTVp7Tbndi3U7ftcT2zCZadjxkkmLmd97zmaxWi+sgGcgWrokmpEoy0Dn0vQ==}
@@ -7459,27 +7468,26 @@ packages:
     peerDependencies:
       typescript: 5.0.x || 5.1.x || 5.2.x || 5.3.x || 5.4.x || 5.5.x || 5.6.x || 5.7.x || 5.8.x || 5.9.x || 6.0.x
 
-  typeorm@0.3.31:
-    resolution: {integrity: sha512-6u9EFtdLBgHjnPm78NStVeM+I/1MolTzKykDDcydzKUkh6E++YS6XViU/fePJbvDvEGU4Xq34KOM/CLeer9I2A==}
-    engines: {node: '>=16.13.0'}
+  typeorm@1.1.0:
+    resolution: {integrity: sha512-iX/kvsV42/htCNAQUyElGW87E4Z12neZc6YUFBTEu0BnLiREYDNT5Wfw3wRqZw9vyOEC36zUBAY6Qvywoig06Q==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24.11.0}
     hasBin: true
     peerDependencies:
-      '@google-cloud/spanner': ^5.18.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
+      '@google-cloud/spanner': ^8.0.0
       '@sap/hana-client': ^2.14.22
-      better-sqlite3: ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0
+      better-sqlite3: ^12.0.0
       ioredis: ^5.0.4
-      mongodb: ^5.8.0 || ^6.0.0
-      mssql: ^9.1.1 || ^10.0.0 || ^11.0.0 || ^12.0.0
-      mysql2: ^2.2.5 || ^3.0.1
+      mongodb: ^7.0.0
+      mssql: ^12.0.0
+      mysql2: ^3.15.3
       oracledb: ^6.3.0 || ^7.0.0
       pg: ^8.5.1
       pg-native: ^3.0.0
       pg-query-stream: ^4.0.0
-      redis: ^3.1.1 || ^4.0.0 || ^5.0.14
+      redis: ^5.0.0 || ^6.0.0
       sql.js: ^1.4.0
-      sqlite3: ^5.0.3 || ^6.0.0
-      ts-node: ^10.7.0
-      typeorm-aurora-data-api-driver: ^2.0.0 || ^3.0.0
+      ts-node: ^10.9.2
+      typeorm-aurora-data-api-driver: ^3.0.0
     peerDependenciesMeta:
       '@google-cloud/spanner':
         optional: true
@@ -7506,8 +7514,6 @@ packages:
       redis:
         optional: true
       sql.js:
-        optional: true
-      sqlite3:
         optional: true
       ts-node:
         optional: true
@@ -7874,6 +7880,10 @@ packages:
   yargs@17.7.3:
     resolution: {integrity: sha512-GZtjxm/J/4TSxuL3FNYjCmLktBTnIw/rVmKSIyKeYAZpmJB2ig9VauCC5xsa82GNKVKDAqpOn3KVzNt0zmrU0g==}
     engines: {node: '>=12'}
+
+  yargs@18.0.0:
+    resolution: {integrity: sha512-4UEqdc2RYGHZc7Doyqkrqiln3p9X2DZVxaGbwhn2pi7MrRagKaOcIKe8L3OxYcbhXLgLFUS3zAYuQjKBQgmuNg==}
+    engines: {node: ^20.19.0 || ^22.12.0 || >=23}
 
   yauzl@2.10.0:
     resolution: {integrity: sha512-p4a9I6X6nu6IhoGmBqAcbJy1mlC4j27vEPZX9F4L4/vZT3Lyq1VkFHw/V/PUcB9Buo+DG3iHkT0x3Qya58zc3g==}
@@ -8374,6 +8384,32 @@ snapshots:
       - debug
       - jest
       - supports-color
+      - typescript
+
+  '@configu/database@file:packages/stores/database(mssql@11.0.1)(pg@8.22.0)(typescript@5.9.3)':
+    dependencies:
+      '@configu/sdk': file:packages/sdk(typescript@5.9.3)
+      reflect-metadata: 0.2.2
+      typeorm: 1.1.0(mssql@11.0.1)(pg@8.22.0)
+    transitivePeerDependencies:
+      - '@google-cloud/spanner'
+      - '@sap/hana-client'
+      - babel-plugin-macros
+      - better-sqlite3
+      - ioredis
+      - jest
+      - mongodb
+      - mssql
+      - mysql2
+      - oracledb
+      - pg
+      - pg-native
+      - pg-query-stream
+      - redis
+      - sql.js
+      - supports-color
+      - ts-node
+      - typeorm-aurora-data-api-driver
       - typescript
 
   '@configu/sdk@file:packages/sdk(typescript@5.9.3)':
@@ -9152,7 +9188,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@js-joda/core@6.1.0': {}
+  '@js-joda/core@5.7.0': {}
+
+  '@js-joda/core@6.1.0':
+    optional: true
 
   '@js-sdsl/ordered-map@4.4.2': {}
 
@@ -10440,7 +10479,10 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tediousjs/connection-string@1.1.0': {}
+  '@tediousjs/connection-string@0.5.0': {}
+
+  '@tediousjs/connection-string@1.1.0':
+    optional: true
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
@@ -10931,8 +10973,6 @@ snapshots:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  app-root-path@3.1.0: {}
-
   arg@5.0.2: {}
 
   argparse@1.0.10:
@@ -11343,6 +11383,12 @@ snapshots:
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
 
+  cliui@9.0.1:
+    dependencies:
+      string-width: 7.2.0
+      strip-ansi: 7.1.2
+      wrap-ansi: 9.0.2
+
   close-with-grace@2.5.0: {}
 
   cloudbees-openfeature-provider-node@1.0.1(@openfeature/js-sdk@1.6.1):
@@ -11681,8 +11727,6 @@ snapshots:
   dns-socket@4.2.2:
     dependencies:
       dns-packet: 5.6.1
-
-  dotenv@16.6.1: {}
 
   dotenv@17.4.2: {}
 
@@ -12959,7 +13003,6 @@ snapshots:
   iconv-lite@0.6.3:
     dependencies:
       safer-buffer: 2.1.2
-    optional: true
 
   iconv-lite@0.7.3:
     dependencies:
@@ -14243,6 +14286,17 @@ snapshots:
 
   ms@2.1.3: {}
 
+  mssql@11.0.1:
+    dependencies:
+      '@tediousjs/connection-string': 0.5.0
+      commander: 11.1.0
+      debug: 4.4.3
+      rfdc: 1.4.1
+      tarn: 3.0.2
+      tedious: 18.6.2
+    transitivePeerDependencies:
+      - supports-color
+
   mssql@12.7.0:
     dependencies:
       '@tediousjs/connection-string': 1.1.0
@@ -14252,6 +14306,7 @@ snapshots:
       tedious: 20.0.0
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   mute-stream@2.0.0: {}
 
@@ -15570,12 +15625,6 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  sha.js@2.4.12:
-    dependencies:
-      inherits: 2.0.4
-      safe-buffer: 5.2.1
-      to-buffer: 1.2.2
-
   sharp-ico@0.1.5:
     dependencies:
       decode-ico: 0.4.1
@@ -16126,6 +16175,21 @@ snapshots:
 
   tarn@3.0.2: {}
 
+  tedious@18.6.2:
+    dependencies:
+      '@azure/core-auth': 1.10.1
+      '@azure/identity': 4.13.1
+      '@azure/keyvault-keys': 4.10.2
+      '@js-joda/core': 5.7.0
+      '@types/node': 24.13.3
+      bl: 6.1.6
+      iconv-lite: 0.6.3
+      js-md4: 0.3.2
+      native-duplexpair: 1.0.0
+      sprintf-js: 1.1.3
+    transitivePeerDependencies:
+      - supports-color
+
   tedious@20.0.0:
     dependencies:
       '@azure/core-auth': 1.10.1
@@ -16140,6 +16204,7 @@ snapshots:
       sprintf-js: 1.1.3
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   teeny-request@10.1.3:
     dependencies:
@@ -16175,15 +16240,14 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.5)
       picomatch: 4.0.5
 
+  tinyglobby@0.2.17:
+    dependencies:
+      fdir: 6.5.0(picomatch@4.0.5)
+      picomatch: 4.0.5
+
   tinyrainbow@3.1.0: {}
 
   tmpl@1.0.5: {}
-
-  to-buffer@1.2.2:
-    dependencies:
-      isarray: 2.0.5
-      safe-buffer: 5.2.1
-      typed-array-buffer: 1.0.3
 
   to-data-view@1.1.0: {}
 
@@ -16319,27 +16383,40 @@ snapshots:
       typescript: 5.9.3
       yaml: 2.9.0
 
-  typeorm@0.3.31(mssql@12.7.0)(pg@8.22.0)(sqlite3@6.0.1):
+  typeorm@1.1.0(mssql@11.0.1)(pg@8.22.0):
     dependencies:
       '@sqltools/formatter': 1.2.5
       ansis: 4.3.1
-      app-root-path: 3.1.0
-      buffer: 6.0.3
       dayjs: 1.11.21
       debug: 4.4.3
       dedent: 1.7.2
-      dotenv: 16.6.1
-      glob: 10.5.0
       reflect-metadata: 0.2.2
-      sha.js: 2.4.12
       sql-highlight: 6.1.0
+      tinyglobby: 0.2.17
       tslib: 2.8.1
-      uuid: 11.1.1
-      yargs: 17.7.3
+      yargs: 18.0.0
+    optionalDependencies:
+      mssql: 11.0.1
+      pg: 8.22.0
+    transitivePeerDependencies:
+      - babel-plugin-macros
+      - supports-color
+
+  typeorm@1.1.0(mssql@12.7.0)(pg@8.22.0):
+    dependencies:
+      '@sqltools/formatter': 1.2.5
+      ansis: 4.3.1
+      dayjs: 1.11.21
+      debug: 4.4.3
+      dedent: 1.7.2
+      reflect-metadata: 0.2.2
+      sql-highlight: 6.1.0
+      tinyglobby: 0.2.17
+      tslib: 2.8.1
+      yargs: 18.0.0
     optionalDependencies:
       mssql: 12.7.0
       pg: 8.22.0
-      sqlite3: 6.0.1
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
@@ -16737,6 +16814,15 @@ snapshots:
       string-width: 4.2.3
       y18n: 5.0.8
       yargs-parser: 21.1.1
+
+  yargs@18.0.0:
+    dependencies:
+      cliui: 9.0.1
+      escalade: 3.2.0
+      get-caller-file: 2.0.5
+      string-width: 7.2.0
+      y18n: 5.0.8
+      yargs-parser: 22.0.0
 
   yauzl@2.10.0:
     dependencies:

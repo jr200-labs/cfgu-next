@@ -10,7 +10,7 @@
   "dependencies": {
     "@configu/sdk": "workspace:*",
     "reflect-metadata": "^0.2.2",
-    "typeorm": "^0.3.31"
+    "typeorm": "^1.1.0"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",
