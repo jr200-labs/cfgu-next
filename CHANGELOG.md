@@ -1,5 +1,59 @@
 # Changelog
 
+## [1.9.0](https://github.com/jr200-labs/cfgu-next/compare/v1.8.0...v1.9.0) (2026-07-23)
+
+
+### Features
+
+* **deps:** update dependency @npmcli/arborist to v10 ([#28](https://github.com/jr200-labs/cfgu-next/issues/28)) ([2575a97](https://github.com/jr200-labs/cfgu-next/commit/2575a97feb10893e69870d629b1b641a8fb888ac))
+* **deps:** update dependency @npmcli/arborist to v10 ([#60](https://github.com/jr200-labs/cfgu-next/issues/60)) ([2106898](https://github.com/jr200-labs/cfgu-next/commit/2106898506dd524bb127f3f0563538f0db16f094))
+* **deps:** update dependency @npmcli/package-json to v8 ([#29](https://github.com/jr200-labs/cfgu-next/issues/29)) ([c69cff2](https://github.com/jr200-labs/cfgu-next/commit/c69cff2b75b9efc4a9418178dfb1a422988c7bae))
+* **deps:** update dependency @pnpm/os.env.path-extender to v3 ([#30](https://github.com/jr200-labs/cfgu-next/issues/30)) ([a890372](https://github.com/jr200-labs/cfgu-next/commit/a8903724701035967d21abdf6e62e990006a6ddc))
+* **deps:** update dependency @splitsoftware/splitio to v11 ([#31](https://github.com/jr200-labs/cfgu-next/issues/31)) ([b2c3ec9](https://github.com/jr200-labs/cfgu-next/commit/b2c3ec924884ad82c527b2a024908fa8dba33b8d))
+* **deps:** update dependency @vitest/expect to v4 ([#32](https://github.com/jr200-labs/cfgu-next/issues/32)) ([ca17ae1](https://github.com/jr200-labs/cfgu-next/commit/ca17ae1853410436ffc0958c416a376488aba78a))
+* **deps:** update dependency better-sqlite3 to v13 ([#68](https://github.com/jr200-labs/cfgu-next/issues/68)) ([5ed6f4c](https://github.com/jr200-labs/cfgu-next/commit/5ed6f4c458b10f474c6160e9268549dbbb236512))
+* **deps:** update dependency chai to v6 ([#33](https://github.com/jr200-labs/cfgu-next/issues/33)) ([0ab60c4](https://github.com/jr200-labs/cfgu-next/commit/0ab60c478155586fca622f6f34c73cb376acac8a))
+* **deps:** update dependency chai to v6 ([#61](https://github.com/jr200-labs/cfgu-next/issues/61)) ([9f615dc](https://github.com/jr200-labs/cfgu-next/commit/9f615dc744a12a1724f7800cfad10e86438d93b2))
+* **deps:** update dependency diff to v9 ([#34](https://github.com/jr200-labs/cfgu-next/issues/34)) ([a090bbc](https://github.com/jr200-labs/cfgu-next/commit/a090bbc4aa6bb8cf05c45f22ccdb2f8f3d4faabd))
+* **deps:** update dependency fastify to v5 ([#35](https://github.com/jr200-labs/cfgu-next/issues/35)) ([6ccf180](https://github.com/jr200-labs/cfgu-next/commit/6ccf180e9f63ed6a6420de365f972deb3d21f5ad))
+* **deps:** update dependency fastify to v5 ([#62](https://github.com/jr200-labs/cfgu-next/issues/62)) ([66914a3](https://github.com/jr200-labs/cfgu-next/commit/66914a35bb3041c6081ed04b64c4616ca531371b))
+* **deps:** update dependency fastify-cli to v8 ([#36](https://github.com/jr200-labs/cfgu-next/issues/36)) ([3811b7e](https://github.com/jr200-labs/cfgu-next/commit/3811b7ef12f8cd4b96d770f953f38bb14483e52d))
+* **deps:** update dependency fastify-plugin to v6 ([#37](https://github.com/jr200-labs/cfgu-next/issues/37)) ([44cbd7a](https://github.com/jr200-labs/cfgu-next/commit/44cbd7a976d13d59da170c9377b8103ae1613c12))
+* **deps:** update dependency get-stdin to v10 ([#38](https://github.com/jr200-labs/cfgu-next/issues/38)) ([96f6302](https://github.com/jr200-labs/cfgu-next/commit/96f630221e6bd82817719910764fa934be531b64))
+* **deps:** update dependency get-stdin to v10 ([#63](https://github.com/jr200-labs/cfgu-next/issues/63)) ([ab9c642](https://github.com/jr200-labs/cfgu-next/commit/ab9c64212477a46793c3f96d0f92dc1e89d1935f))
+* **deps:** update dependency giget to v3 ([#39](https://github.com/jr200-labs/cfgu-next/issues/39)) ([f5477ad](https://github.com/jr200-labs/cfgu-next/commit/f5477ad7473a63fc7ddd0aaff0682ef6a34c17d5))
+* **deps:** update dependency ini to v7 ([#40](https://github.com/jr200-labs/cfgu-next/issues/40)) ([f86e171](https://github.com/jr200-labs/cfgu-next/commit/f86e171c6baa99f9f439d897622c9b5b7dcc6c43))
+* **deps:** update dependency jest-extended to v7 ([#41](https://github.com/jr200-labs/cfgu-next/issues/41)) ([5354978](https://github.com/jr200-labs/cfgu-next/commit/5354978910be095ee19d4892dd3bcfb34b9e9592))
+* **deps:** update dependency lint-staged to v17 ([#42](https://github.com/jr200-labs/cfgu-next/issues/42)) ([8240920](https://github.com/jr200-labs/cfgu-next/commit/824092005cacec4ca09f8ec1c9d94c5050fb429d))
+* **deps:** update dependency mssql to v12 ([#43](https://github.com/jr200-labs/cfgu-next/issues/43)) ([f453d8c](https://github.com/jr200-labs/cfgu-next/commit/f453d8c93ef41e7141488af68dc5f550569dbd5b))
+* **deps:** update dependency mssql to v12 ([#69](https://github.com/jr200-labs/cfgu-next/issues/69)) ([942561b](https://github.com/jr200-labs/cfgu-next/commit/942561ba16f2909c4ed635b70547dad9d918b4c9))
+* **deps:** update dependency open to v11 ([#44](https://github.com/jr200-labs/cfgu-next/issues/44)) ([67d0ec6](https://github.com/jr200-labs/cfgu-next/commit/67d0ec68851b81d6a68f06ab85f7de7dc6cd3af1))
+* **deps:** update dependency open to v11 ([#65](https://github.com/jr200-labs/cfgu-next/issues/65)) ([bc32244](https://github.com/jr200-labs/cfgu-next/commit/bc32244f8627168f47f597a909e564a8405c7a06))
+* **deps:** update dependency open-editor to v6 ([#45](https://github.com/jr200-labs/cfgu-next/issues/45)) ([01d451f](https://github.com/jr200-labs/cfgu-next/commit/01d451fb1847d3186e9930d7b599fd6c96a15257))
+* **deps:** update dependency open-editor to v6 ([#64](https://github.com/jr200-labs/cfgu-next/issues/64)) ([2d54247](https://github.com/jr200-labs/cfgu-next/commit/2d54247006305f2a541477ce51f2b0fb2d92ca8a))
+* **deps:** update dependency open-editor to v6 ([#66](https://github.com/jr200-labs/cfgu-next/issues/66)) ([c9c8652](https://github.com/jr200-labs/cfgu-next/commit/c9c8652215ba574bde8f429f9ea7e9b5a7e529eb))
+* **deps:** update dependency openid-client to v6 ([#46](https://github.com/jr200-labs/cfgu-next/issues/46)) ([3582428](https://github.com/jr200-labs/cfgu-next/commit/3582428ea86c4c36582c15e9d34814e68113ee43))
+* **deps:** update dependency ses to v2 ([#47](https://github.com/jr200-labs/cfgu-next/issues/47)) ([93d24ee](https://github.com/jr200-labs/cfgu-next/commit/93d24ee7ebde672dbd750033e63f6d672d687ce2))
+* **deps:** update dependency sqlite3 to v6 ([#48](https://github.com/jr200-labs/cfgu-next/issues/48)) ([8ef64e9](https://github.com/jr200-labs/cfgu-next/commit/8ef64e9d637b9f819cffb96d380efd93d9f2ead8))
+* **deps:** update dependency std-env to v4 ([#49](https://github.com/jr200-labs/cfgu-next/issues/49)) ([21db545](https://github.com/jr200-labs/cfgu-next/commit/21db5451e508b1e895f785be36ea7babfb1764fb))
+* **deps:** update dependency syncpack to v15 ([#50](https://github.com/jr200-labs/cfgu-next/issues/50)) ([5bf7b51](https://github.com/jr200-labs/cfgu-next/commit/5bf7b5194c8cbb6a59b5bce849c93a481863ded3))
+* **deps:** update dependency type-fest to v5 ([#51](https://github.com/jr200-labs/cfgu-next/issues/51)) ([60cd9aa](https://github.com/jr200-labs/cfgu-next/commit/60cd9aa17900302be38ac0cafa57873a902c31f4))
+* **deps:** update dependency typeorm to v1 ([#52](https://github.com/jr200-labs/cfgu-next/issues/52)) ([d6a6b8d](https://github.com/jr200-labs/cfgu-next/commit/d6a6b8dc26a477868b83ea8d58b2b1b796fbb521))
+* **deps:** update dependency typescript to v7 ([#53](https://github.com/jr200-labs/cfgu-next/issues/53)) ([86d7142](https://github.com/jr200-labs/cfgu-next/commit/86d7142633508bd0cda1bb39bf9bc857ebfc8e37))
+* **deps:** update eslint monorepo to v10 ([#54](https://github.com/jr200-labs/cfgu-next/issues/54)) ([1b04c07](https://github.com/jr200-labs/cfgu-next/commit/1b04c07b081d201e38093efb8c9e2256ee4feaf2))
+* **deps:** update pnpm to v11 ([#55](https://github.com/jr200-labs/cfgu-next/issues/55)) ([7e29dbf](https://github.com/jr200-labs/cfgu-next/commit/7e29dbf8e026895bc1edc025cce26d4c12facb32))
+
+
+### Bug Fixes
+
+* align pnpm engine version ([#57](https://github.com/jr200-labs/cfgu-next/issues/57)) ([ca4e15c](https://github.com/jr200-labs/cfgu-next/commit/ca4e15cdef59ee426588682db8b8bb7958052f67))
+* **deps:** update all non-major dependencies ([#24](https://github.com/jr200-labs/cfgu-next/issues/24)) ([ab8a3c7](https://github.com/jr200-labs/cfgu-next/commit/ab8a3c701e7c440a30d922261634c1ce92426614))
+* **deps:** update dependency better-sqlite3 to ^12.11.1 ([#67](https://github.com/jr200-labs/cfgu-next/issues/67)) ([310e542](https://github.com/jr200-labs/cfgu-next/commit/310e5420adffee0c64955b3a666e501ef5efd12c))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.34 ([#27](https://github.com/jr200-labs/cfgu-next/issues/27)) ([1653f25](https://github.com/jr200-labs/cfgu-next/commit/1653f25902c6a99177253b1fe4b7891971d984a1))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.35 ([#58](https://github.com/jr200-labs/cfgu-next/issues/58)) ([8ecf427](https://github.com/jr200-labs/cfgu-next/commit/8ecf427bbcd24cb9a38a491e86080ba2df4153c1))
+* **deps:** update dependency mintlify to ^4.2.734 ([#59](https://github.com/jr200-labs/cfgu-next/issues/59)) ([d14541c](https://github.com/jr200-labs/cfgu-next/commit/d14541cc9bc344d91c04cfa50e65350fd0741378))
+* require Node 24.15 ([#26](https://github.com/jr200-labs/cfgu-next/issues/26)) ([7b195fe](https://github.com/jr200-labs/cfgu-next/commit/7b195fe7ad35702199edc23827ae39ee4c43d09b))
+
 ## [1.8.0](https://github.com/jr200-labs/cfgu-next/compare/v1.7.0...v1.8.0) (2026-07-22)
 
 
