@@ -9,9 +9,6 @@ patchedDependencies:
   '@npmcli/run-script':
     hash: 6f33e535691c62e9f6dd1e222664a0e7cb98ee8e04af8e9ac2fe4a8913ee682b
     path: patches/@npmcli__run-script.patch
-  giget:
-    hash: 928a883e8ac8cf77ab141da917de2aa536df39a3cd03cbcb6af746c63238ce00
-    path: patches/giget.patch
 
 importers:
 
@@ -191,7 +188,7 @@ importers:
         version: 6.0.1
       giget:
         specifier: ^3.3.0
-        version: 3.3.0(patch_hash=928a883e8ac8cf77ab141da917de2aa536df39a3cd03cbcb6af746c63238ce00)
+        version: 3.3.0
       glob:
         specifier: ^13.0.6
         version: 13.0.6
@@ -12606,7 +12603,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  giget@3.3.0(patch_hash=928a883e8ac8cf77ab141da917de2aa536df39a3cd03cbcb6af746c63238ce00): {}
+  giget@3.3.0: {}
 
   github-from-package@0.0.0: {}
 

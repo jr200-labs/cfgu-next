@@ -1,17 +1,12 @@
 import { createJiti } from 'jiti';
 // import { createRequire } from 'module';
-import { downloadTemplate, TemplateProvider, TemplateInfo, GitInfo, providers } from 'giget';
+import { downloadTemplate, TemplateProvider, TemplateInfo } from 'giget';
 import PackageJson from '@npmcli/package-json';
 import Arborist from '@npmcli/arborist';
 import { debug } from './OutputStreams';
 import { CONFIGU_PATHS } from './FileSystem';
 
 // todo: think of a way to check if local package is outdated and needs to be updated
-// todo: potentially contribute to giget providers - https://github.com/unjs/giget/blob/main/src/providers.ts
-declare module 'giget' {
-  const providers: Record<GitInfo['provider'] | 'configu', TemplateProvider>;
-}
-
 // todo: after approval of https://about.gitlab.com/solutions/open-source/join/#open-source-program-application
 // todo: we can add gitlab support with a mirror of the configu repo on gitlab - https://docs.gitlab.com/ee/user/project/repository/mirror/
 // export const ConfiguRepository = `gitlab:configu/configu`;
@@ -19,13 +14,24 @@ declare module 'giget' {
 export const CONFIGU_DEFAULT_REPOSITORY = `configu/configu`;
 
 export const ConfiguTemplateProvider: TemplateProvider & { repository: string } = async (input, options) => {
-  // input is a "configu-repository-subdir#git-ref" string
-  return providers.github(`${ConfiguTemplateProvider.repository}/${input}`, options) as TemplateInfo;
+  const [subdir = '', ref = 'main'] = input.split('#', 2);
+  const githubApiUrl = process.env.GIGET_GITHUB_URL || 'https://api.github.com';
+  return {
+    name: ConfiguTemplateProvider.repository.replace('/', '-'),
+    version: ref,
+    subdir: `/${subdir}`,
+    headers: {
+      Authorization: options.auth ? `Bearer ${options.auth}` : undefined,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+    },
+    url: `${githubApiUrl.replace('api.github.com', 'github.com')}/${ConfiguTemplateProvider.repository}/tree/${ref}/${subdir}`,
+    tar: `${githubApiUrl}/repos/${ConfiguTemplateProvider.repository}/tarball/${ref}`,
+  } as TemplateInfo;
 };
 ConfiguTemplateProvider.repository = CONFIGU_DEFAULT_REPOSITORY;
-providers.configu = ConfiguTemplateProvider;
 
-export const TemplateProviders = providers;
+export const TemplateProviders = new Set(['github', 'gitlab', 'bitbucket', 'sourcehut', 'configu']);
 
 export const downloadRepositoryTemplate = async (template: string, destination: string, force = false) => {
   debug('XDG_CACHE_HOME:', process.env.XDG_CACHE_HOME);
@@ -40,7 +46,7 @@ export const downloadRepositoryTemplate = async (template: string, destination: 
     forceClean: force,
     preferOffline: true,
     registry: false,
-    providers,
+    providers: { configu: ConfiguTemplateProvider },
     silent: !debug.enabled,
   });
   debug('Repository template downloaded:', resp);
