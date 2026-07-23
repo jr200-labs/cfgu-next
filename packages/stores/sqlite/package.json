@@ -10,7 +10,7 @@
   "dependencies": {
     "@configu/database": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "better-sqlite3": "^12.0.0"
+    "better-sqlite3": "^12.11.1"
   },
   "devDependencies": {
     "typeorm": "^1.1.0"
