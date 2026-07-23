@@ -10,8 +10,8 @@
   "dependencies": {
     "@configu/database": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "mssql": "^12.7.0",
-    "typeorm": "^0.3.31"
+    "mssql": "^11.0.1",
+    "typeorm": "^1.1.0"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",

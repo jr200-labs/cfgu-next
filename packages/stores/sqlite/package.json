@@ -10,10 +10,10 @@
   "dependencies": {
     "@configu/database": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "sqlite3": "^6.0.1"
+    "better-sqlite3": "^12.0.0"
   },
   "devDependencies": {
-    "typeorm": "^0.3.31"
+    "typeorm": "^1.1.0"
   },
   "exports": "./src/index.ts",
   "files": [
