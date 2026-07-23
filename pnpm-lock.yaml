@@ -535,8 +535,8 @@ importers:
         specifier: workspace:*
         version: link:../../sdk
       ini:
-        specifier: ^5.0.0
-        version: 5.0.0
+        specifier: ^7.0.0
+        version: 7.0.0
     devDependencies:
       '@types/ini':
         specifier: ^4.1.1
