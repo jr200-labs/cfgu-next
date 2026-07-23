@@ -81,7 +81,7 @@ export class ConfigValue {
         input: {
           store: { ...context.store },
           set: { ...context.set },
-          schema: { ...context.schema },
+          schema: JSON.parse(JSON.stringify({ ...context.schema })),
         },
         ...$,
       };
