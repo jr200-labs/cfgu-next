@@ -4,7 +4,7 @@ import { glob } from 'glob';
 import process from 'node:process';
 import os from 'node:os';
 import fs from 'node:fs/promises';
-import { _ } from '@configu/sdk';
+import { _ } from '@jr200-labs/sdk';
 import { debug } from './OutputStreams';
 import { stdenv, JSON, YAML, Dotenv } from './Misc';
 

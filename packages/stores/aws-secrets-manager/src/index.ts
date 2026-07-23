@@ -6,7 +6,7 @@ import {
   CreateSecretCommand,
   DeleteSecretCommand,
 } from '@aws-sdk/client-secrets-manager';
-import { KeyValueConfigStore } from '@configu/key-value';
+import { KeyValueConfigStore } from '@jr200-labs/key-value';
 
 export type AWSSecretsManagerConfigStoreConfiguration = SecretsManagerClientConfig;
 

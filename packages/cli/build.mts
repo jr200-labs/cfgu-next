@@ -3,7 +3,7 @@
 import process from 'node:process';
 import fs from 'node:fs/promises';
 import { $, which, cd } from 'zx';
-import { path, stdenv } from '@configu/common';
+import { path, stdenv } from '@jr200-labs/common';
 
 // input: NODE_VERSION, NODE_DIST
 // output: dist/configu, dist/configu-v$NODE_VERSION-$NODE_DIST.{tar.gz,zip}

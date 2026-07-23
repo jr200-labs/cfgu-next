@@ -1,8 +1,8 @@
 import { type EvaluationContext, OpenFeature } from '@openfeature/server-sdk';
 import { LaunchDarklyProvider } from '@launchdarkly/openfeature-node-server';
 import { type LDOptions } from '@launchdarkly/node-server-sdk';
-import { _, type ConfigQuery, type Config } from '@configu/sdk';
-import { OpenFeatureConfigStore } from '@configu/open-feature';
+import { _, type ConfigQuery, type Config } from '@jr200-labs/sdk';
+import { OpenFeatureConfigStore } from '@jr200-labs/open-feature';
 
 export type LaunchDarklyConfigStoreConfiguration = {
   sdkKey: string;

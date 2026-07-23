@@ -1,5 +1,5 @@
 import crypto from 'node:crypto';
-import { type Config, ConfigStore, type ConfigQuery } from '@configu/sdk';
+import { type Config, ConfigStore, type ConfigQuery } from '@jr200-labs/sdk';
 
 /**
  * Built-in key strategies:

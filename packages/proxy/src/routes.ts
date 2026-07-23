@@ -1,6 +1,6 @@
 import { FastifyPluginAsync } from 'fastify';
-import { ConfigSchema, ConfigSet, EvalCommand, EvalCommandOutput, ExportCommand, FromSchema } from '@configu/sdk';
-import { CfguFile, ConfiguInterface } from '@configu/common';
+import { ConfigSchema, ConfigSet, EvalCommand, EvalCommandOutput, ExportCommand, FromSchema } from '@jr200-labs/sdk';
+import { CfguFile, ConfiguInterface } from '@jr200-labs/common';
 
 const body = {
   type: 'array',

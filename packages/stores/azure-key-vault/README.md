@@ -1,4 +1,4 @@
-# @configu/azure-keyvault
+# @jr200-labs/azure-keyvault
 
 Integrates the Configu Orchestrator with [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/).
 

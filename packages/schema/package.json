@@ -1,16 +1,16 @@
 {
-  "name": "@configu/schema",
+  "name": "@jr200-labs/schema",
   "description": "Configu DSL JSON Schema",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@configu/common": "workspace:*",
-    "@configu/sdk": "workspace:*"
+    "@jr200-labs/common": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*"
   },
   "devDependencies": {
     "ajv-cli": "^5.0.0"

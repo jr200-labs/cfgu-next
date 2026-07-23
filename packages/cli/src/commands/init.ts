@@ -2,7 +2,14 @@ import { Command, Option } from 'clipanion';
 import * as t from 'typanion';
 import { setTimeout } from 'node:timers/promises';
 import * as prompts from '@clack/prompts';
-import { path, AllowedExtensions, CfguFile, ConfiguFile, CfguFileContents, ConfiguFileContents } from '@configu/common';
+import {
+  path,
+  AllowedExtensions,
+  CfguFile,
+  ConfiguFile,
+  CfguFileContents,
+  ConfiguFileContents,
+} from '@jr200-labs/common';
 import { BaseCommand } from './base';
 
 export class InitCommand extends BaseCommand {

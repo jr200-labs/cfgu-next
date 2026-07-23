@@ -1,7 +1,7 @@
 import { cwd } from 'node:process';
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs/promises';
-import { ConfigStore, ConfigExpression, _, JSONSchema, JSONSchemaObject, FromSchema } from '@configu/sdk';
+import { ConfigStore, ConfigExpression, _, JSONSchema, JSONSchemaObject, FromSchema } from '@jr200-labs/sdk';
 import {
   debug,
   path as pathe,

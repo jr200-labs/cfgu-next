@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { CONFIGU_DEFAULT_API_URL, CONFIGU_DEFAULT_DOMAIN } from '@configu/configu-platform';
+import { CONFIGU_DEFAULT_API_URL, CONFIGU_DEFAULT_DOMAIN } from '@jr200-labs/configu-platform';
 import { debug } from './OutputStreams';
 
 export { axios as httpClient };
@@ -14,7 +14,7 @@ export {
   ConfiguPlatformConfigStoreApprovalQueueError,
   CONFIGU_DEFAULT_API_URL,
   CONFIGU_DEFAULT_APP_URL,
-} from '@configu/configu-platform';
+} from '@jr200-labs/configu-platform';
 
 export const configuPlatformApi = axios.create({
   baseURL: CONFIGU_DEFAULT_API_URL,

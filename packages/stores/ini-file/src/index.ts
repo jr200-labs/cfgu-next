@@ -1,6 +1,6 @@
 import * as ini from 'ini';
-import { _, type Config } from '@configu/sdk';
-import { FileConfigStore } from '@configu/file';
+import { _, type Config } from '@jr200-labs/sdk';
+import { FileConfigStore } from '@jr200-labs/file';
 
 export type IniFileConfigStoreConfiguration = { path: string };
 

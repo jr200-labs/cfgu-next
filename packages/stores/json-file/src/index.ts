@@ -1,5 +1,5 @@
-import { FileConfigStore } from '@configu/file';
-import { Config } from '@configu/sdk';
+import { FileConfigStore } from '@jr200-labs/file';
+import { Config } from '@jr200-labs/sdk';
 
 export type JsonFileConfigStoreConfiguration = { path: string };
 

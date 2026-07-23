@@ -4,8 +4,8 @@ import type {
   ConfigurationSetting,
 } from '@azure/app-configuration';
 import type { DefaultAzureCredentialOptions } from '@azure/identity';
-import type { Config, ConfigQuery } from '@configu/sdk';
-import { ConfigStore, ConfigStoreConfiguration } from '@configu/sdk';
+import type { Config, ConfigQuery } from '@jr200-labs/sdk';
+import { ConfigStore, ConfigStoreConfiguration } from '@jr200-labs/sdk';
 
 export type AzureAppConfigurationConfiguration = ConfigStoreConfiguration & {
   endpoint: string;

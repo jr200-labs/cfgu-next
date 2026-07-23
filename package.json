@@ -43,7 +43,7 @@
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "24.15.0",
+      "version": "26.3.0",
       "onFail": "error"
     },
     "packageManager": {
@@ -73,9 +73,9 @@
   "repository": "github:jr200-labs/cfgu-next",
   "scripts": {
     "build": "pnpm build:libs && pnpm install --ignore-scripts && pnpm build:interfaces",
-    "build:docs": "pnpm --filter \"@configu/docs\" build",
-    "build:interfaces": "pnpm --filter \"@configu/schema\" --filter \"@configu/cli\" --filter \"@configu/proxy\" build",
-    "build:libs": "pnpm --filter \"@configu/sdk\" --filter \"@configu/formatters\" build",
+    "build:docs": "pnpm --filter \"@jr200-labs/docs\" build",
+    "build:interfaces": "pnpm --filter \"@jr200-labs/schema\" --filter \"@jr200-labs/cli\" --filter \"@jr200-labs/proxy\" build",
+    "build:libs": "pnpm --filter \"@jr200-labs/sdk\" --filter \"@jr200-labs/formatters\" build",
     "clean": "pnpm -r clean",
     "clean:all": "pnpm clean && pnpm clean:cache",
     "clean:cache": "shx rm -rf **/node_modules **/dist .eslintcache lcov.info",

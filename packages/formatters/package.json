@@ -1,9 +1,9 @@
 {
-  "name": "@configu/formatters",
+  "name": "@jr200-labs/formatters",
   "description": "Configu Formatters Extension",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },

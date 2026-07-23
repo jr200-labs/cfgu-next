@@ -95,7 +95,7 @@ const jiti = createJiti(import.meta.url, {
   // // Alias map: redirect SDK source imports to bundled package
   // // @see https://github.com/unjs/jiti#options
   // alias: {
-  //   '@configu/sdk': require.resolve('@configu/sdk'),
+  //   '@jr200-labs/sdk': require.resolve('@jr200-labs/sdk'),
   // },
 });
 

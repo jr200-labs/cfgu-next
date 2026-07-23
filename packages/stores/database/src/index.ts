@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { DataSource, EntitySchema, type DataSourceOptions } from 'typeorm';
 import crypto from 'node:crypto';
-import { _, ConfigStore, type ConfigQuery, type Config } from '@configu/sdk';
+import { _, ConfigStore, type ConfigQuery, type Config } from '@jr200-labs/sdk';
 
 export type ORMConfigStoreSharedConfiguration = {
   tableName?: string;

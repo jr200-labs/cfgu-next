@@ -453,18 +453,18 @@ The new `--defaults` flag can now be used to evaluate default value from a Confi
 
 ## Other changes
 
-### `@configu/node` and `@configu/browser` removal
+### `@jr200-labs/node` and `@jr200-labs/browser` removal
 
-Any and all uses of these packages are no longer supported. We encourage all users of these packages to utilize [`@configu/cli`](/interfaces/cli/overview) or [`@configu/proxy`](/interfaces/proxy/overview) depending on your requirements. All ConfigStore implementations have been moved to `@configu/integrations`.
+Any and all uses of these packages are no longer supported. We encourage all users of these packages to utilize [`@jr200-labs/cli`](/interfaces/cli/overview) or [`@jr200-labs/proxy`](/interfaces/proxy/overview) depending on your requirements. All ConfigStore implementations have been moved to `@jr200-labs/integrations`.
 
-### `@configu/lib` removal
+### `@jr200-labs/lib` removal
 
-Superseded by `@configu/common` which is a package that provides shared functionality for the higher-level interfaces.
+Superseded by `@jr200-labs/common` which is a package that provides shared functionality for the higher-level interfaces.
 
-### `@configu/ts` removal
+### `@jr200-labs/ts` removal
 
-Superseded by `@configu/sdk`.
+Superseded by `@jr200-labs/sdk`.
 
-### Introduction of `@configu/integrations`
+### Introduction of `@jr200-labs/integrations`
 
-A new package that contains all ConfigStore implementations and libraries that extend the `ConfigExpressions` functionality which are decoupled from the core `@configu/sdk` package. This package is intended to be used by higher-level configu interfaces such as the CLI and proxy.
+A new package that contains all ConfigStore implementations and libraries that extend the `ConfigExpressions` functionality which are decoupled from the core `@jr200-labs/sdk` package. This package is intended to be used by higher-level configu interfaces such as the CLI and proxy.

@@ -1,6 +1,6 @@
 import * as xml2js from 'xml2js';
-import { type Config } from '@configu/sdk';
-import { FileConfigStore } from '@configu/file';
+import { type Config } from '@jr200-labs/sdk';
+import { FileConfigStore } from '@jr200-labs/file';
 
 export type XmlFileConfigStoreConfiguration = { path: string; builderOptions?: xml2js.BuilderOptions };
 

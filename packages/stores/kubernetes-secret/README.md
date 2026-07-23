@@ -1,4 +1,4 @@
-# @configu/kubernetes-secret
+# @jr200-labs/kubernetes-secret
 
 Integrates the Configu Orchestrator with [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/).
 

@@ -6,7 +6,7 @@
 # Reuse local cache:
 # docker run --rm -i -w $(pwd) -v $(pwd):$(pwd) -v $HOME/.configu/cache:/.configu/cache configu/cli:latest --help
 
-ARG NODE_VERSION="24.11.0"
+ARG NODE_VERSION="26.3.0"
 FROM node:$NODE_VERSION-slim AS base
 
 LABEL author "dev@configu.com"
@@ -45,15 +45,15 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
 
 # 5. Set CLI version and re-install only CLI deps
 ARG CONFIGU_VERSION="0.0.0"
-RUN pnpm --filter=@configu/cli exec \
+RUN pnpm --filter=@jr200-labs/cli exec \
     npm --no-git-tag-version --allow-same-version version $CONFIGU_VERSION && \
-    pnpm --filter=@configu/cli install --ignore-scripts --frozen-lockfile --prefer-offline
+    pnpm --filter=@jr200-labs/cli install --ignore-scripts --frozen-lockfile --prefer-offline
 
 
 # 6. Build and deploy CLI
 RUN pnpm build && \
-    # pnpm --filter=@configu/cli --if-present run build && \
-    pnpm --filter=@configu/cli deploy --prod --ignore-scripts /dist
+    # pnpm --filter=@jr200-labs/cli --if-present run build && \
+    pnpm --filter=@jr200-labs/cli deploy --prod --ignore-scripts /dist
     # && \ chmod +x /dist/dist/configu.cjs
 
 FROM node:$NODE_VERSION-alpine AS dist

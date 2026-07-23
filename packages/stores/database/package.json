@@ -1,14 +1,14 @@
 {
-  "name": "@configu/database",
+  "name": "@jr200-labs/database",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@configu/sdk": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*",
     "reflect-metadata": "^0.2.2",
     "typeorm": "^1.1.0"
   },

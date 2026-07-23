@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
-import { ConfigStore, ConfigExpression, ConfigStoreConstructor, CfguSchema, _, JSONSchema } from '@configu/sdk';
-import configuSdkPackageJson from '@configu/sdk/package.json';
+import { ConfigStore, ConfigExpression, ConfigStoreConstructor, CfguSchema, _, JSONSchema } from '@jr200-labs/sdk';
+import configuSdkPackageJson from '@jr200-labs/sdk/package.json';
 import {
   debug,
   path as pathe,
@@ -102,7 +102,7 @@ export class ConfiguModule {
 
     await installPackage(packageLocalDir);
 
-    if (content.name === `@configu/sdk`) {
+    if (content.name === `@jr200-labs/sdk`) {
       return;
     }
 
@@ -148,7 +148,7 @@ export class ConfiguModule {
       packageLocalDir,
     });
 
-    if (content.name === `@configu/sdk` && content.config?.entry) {
+    if (content.name === `@jr200-labs/sdk` && content.config?.entry) {
       localPackage.update({
         exports: [content.config.entry as string],
       });
@@ -161,22 +161,22 @@ export class ConfiguModule {
           throw new Error(`package is invalid, missing dependency value: ${key}`);
         }
 
-        if (!key.startsWith('@configu/') || !value.startsWith('workspace:')) {
+        if (!key.startsWith('@jr200-labs/') || !value.startsWith('workspace:')) {
           return value;
         }
 
         let configuDependencyUri = '';
-        if (key === `@configu/sdk`) {
+        if (key === `@jr200-labs/sdk`) {
           configuDependencyUri = `configu:${configuSdkPackageJson.repository.directory}#${version}`;
           configuDependencies.unshift(configuDependencyUri);
-          debug(`Installing @configu/sdk`, configuDependencyUri);
+          debug(`Installing @jr200-labs/sdk`, configuDependencyUri);
         } else {
           // configu dependency which is not sdk must be in the same git uri subdir as the package
-          const packageRawName = (content.name as string).replace('@configu/', '');
-          const configuDependencyRawName = key.replace('@configu/', '');
+          const packageRawName = (content.name as string).replace('@jr200-labs/', '');
+          const configuDependencyRawName = key.replace('@jr200-labs/', '');
           configuDependencyUri = packageUri.replace(packageRawName, configuDependencyRawName);
           configuDependencies.push(configuDependencyUri);
-          debug(`Installing @configu/package`, configuDependencyUri);
+          debug(`Installing @jr200-labs/package`, configuDependencyUri);
         }
 
         const configuDependencyAbsoluteUri = ConfiguModule.getAbsoluteUri(configuDependencyUri);

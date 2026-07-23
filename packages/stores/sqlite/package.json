@@ -1,15 +1,15 @@
 {
-  "name": "@configu/sqlite",
+  "name": "@jr200-labs/sqlite",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@configu/database": "workspace:*",
-    "@configu/sdk": "workspace:*",
+    "@jr200-labs/database": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*",
     "better-sqlite3": "^13.0.1"
   },
   "devDependencies": {

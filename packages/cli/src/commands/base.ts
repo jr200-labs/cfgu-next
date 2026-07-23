@@ -2,8 +2,8 @@ import { Command, Option, UsageError } from 'clipanion';
 import sea from 'node:sea';
 import { log } from '@clack/prompts';
 import getStdin from 'get-stdin';
-import { _, ConfigValue, EvalCommandOutput } from '@configu/sdk';
-import { debug, inspect, ConfiguInterface, parseJsonFile, unflatten } from '@configu/common';
+import { _, ConfigValue, EvalCommandOutput } from '@jr200-labs/sdk';
+import { debug, inspect, ConfiguInterface, parseJsonFile, unflatten } from '@jr200-labs/common';
 
 import { type RunContext } from '..';
 

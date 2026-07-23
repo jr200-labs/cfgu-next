@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import * as YAML from 'yaml';
-import { ObjectConfigStore, type ObjectConfigStoreConfiguration } from '@configu/object';
+import { ObjectConfigStore, type ObjectConfigStoreConfiguration } from '@jr200-labs/object';
 
 export type YamlFileConfigStoreConfiguration = ObjectConfigStoreConfiguration & {
   path: string | string[];

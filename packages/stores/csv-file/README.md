@@ -1,4 +1,4 @@
-# @configu/csv-file
+# @jr200-labs/csv-file
 
 Integrates the Configu Orchestrator with [CSV files](https://en.wikipedia.org/wiki/Comma-separated_values).
 

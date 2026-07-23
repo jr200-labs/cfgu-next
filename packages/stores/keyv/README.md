@@ -1,4 +1,4 @@
-# @configu/keyv
+# @jr200-labs/keyv
 
 Integrates the Configu Orchestrator with [Key-v](https://keyv.org/).
 

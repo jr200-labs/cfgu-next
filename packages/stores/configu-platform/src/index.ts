@@ -1,5 +1,5 @@
 import axios, { type Axios } from 'axios';
-import { Config, ConfigWithCfgu, ConfigStore, ConfigQuery, validator } from '@configu/sdk';
+import { Config, ConfigWithCfgu, ConfigStore, ConfigQuery, validator } from '@jr200-labs/sdk';
 
 export type ConfiguPlatformConfigStoreConfiguration = {
   credentials: { org: string; token: string };

@@ -1,4 +1,4 @@
-import { KeyValueConfigStore } from '@configu/key-value';
+import { KeyValueConfigStore } from '@jr200-labs/key-value';
 import localForage from 'localforage';
 
 export type LocalForageConfigStoreConfiguration = LocalForageOptions;

@@ -1,10 +1,10 @@
-# @configu/schema
+# @jr200-labs/schema
 
 Configu Files JSON Schema.
 
 ## Overview
 
-The `@configu/schema` package is an integral part of the Configu ecosystem, designed for internal use by higher-level Configu interfaces. This package should not be installed directly or used as a standalone package.
+The `@jr200-labs/schema` package is an integral part of the Configu ecosystem, designed for internal use by higher-level Configu interfaces. This package should not be installed directly or used as a standalone package.
 
 ## Resources
 

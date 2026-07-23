@@ -1,1 +1,1 @@
-# @configu/database abstract store
+# @jr200-labs/database abstract store

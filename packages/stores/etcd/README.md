@@ -1,4 +1,4 @@
-# @configu/etcd
+# @jr200-labs/etcd
 
 Integrates the Configu Orchestrator with [etcd](https://etcd.io/).
 

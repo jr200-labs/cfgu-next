@@ -1,8 +1,8 @@
 import { Command, Option } from 'clipanion';
 import * as t from 'typanion';
 import * as prompts from '@clack/prompts';
-import { ConfigSet, ConfigStore, EvalCommand } from '@configu/sdk';
-import { print, debug, ConfiguInterface } from '@configu/common';
+import { ConfigSet, ConfigStore, EvalCommand } from '@jr200-labs/sdk';
+import { print, debug, ConfiguInterface } from '@jr200-labs/common';
 import { BaseCommand } from './base';
 
 export class CliEvalCommand extends BaseCommand {

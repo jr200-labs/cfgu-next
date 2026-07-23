@@ -13,7 +13,7 @@ strictDepBuilds: false
 childConcurrency: 10
 verifyDepsBeforeRun: warn
 # https://pnpm.io/settings#nodejs-settings
-useNodeVersion: 24.15.0
+useNodeVersion: 26.3.0
 # https://pnpm.io/settings#workspace-settings
 injectWorkspacePackages: true
 disallowWorkspaceCycles: true

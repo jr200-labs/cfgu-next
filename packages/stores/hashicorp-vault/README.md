@@ -1,4 +1,4 @@
-# @configu/hashicorp-vault
+# @jr200-labs/hashicorp-vault
 
 Integrates the Configu Orchestrator with [HashiCorp Vault](https://www.vaultproject.io/).
 

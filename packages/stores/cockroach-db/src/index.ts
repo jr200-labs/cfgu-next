@@ -1,5 +1,5 @@
 import { type CockroachDataSourceOptions } from 'typeorm/driver/cockroachdb/CockroachDataSourceOptions.js';
-import { ORMConfigStore, type ORMConfigStoreSharedConfiguration } from '@configu/database';
+import { ORMConfigStore, type ORMConfigStoreSharedConfiguration } from '@jr200-labs/database';
 
 export type CockroachDBConfigStoreConfiguration = Omit<CockroachDataSourceOptions, 'type'> &
   ORMConfigStoreSharedConfiguration;

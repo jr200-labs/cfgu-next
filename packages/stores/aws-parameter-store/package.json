@@ -1,16 +1,16 @@
 {
-  "name": "@configu/aws-parameter-store",
+  "name": "@jr200-labs/aws-parameter-store",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
     "@aws-sdk/client-ssm": "^3.1093.0",
-    "@configu/key-value": "workspace:*",
-    "@configu/sdk": "workspace:*"
+    "@jr200-labs/key-value": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",

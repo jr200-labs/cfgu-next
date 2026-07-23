@@ -1,7 +1,7 @@
 import { describe, it, beforeEach } from 'node:test';
 import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
-import { type Config, type ConfigQuery } from '@configu/sdk';
+import { type Config, type ConfigQuery } from '@jr200-labs/sdk';
 import { ObjectConfigStore, type ObjectConfigStoreConfiguration } from './index';
 
 /** In-memory concrete implementation for testing the abstract base class. */

@@ -1,4 +1,4 @@
-# @configu/launch-darkly
+# @jr200-labs/launch-darkly
 
 Integrates the Configu Orchestrator with [LaunchDarkly](https://launchdarkly.com/).
 

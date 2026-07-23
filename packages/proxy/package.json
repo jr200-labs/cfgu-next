@@ -1,16 +1,16 @@
 {
-  "name": "@configu/proxy",
+  "name": "@jr200-labs/proxy",
   "description": "Configu Proxy Server",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@configu/common": "workspace:*",
-    "@configu/sdk": "workspace:*",
+    "@jr200-labs/common": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*",
     "@fastify/bearer-auth": "^10.1.2",
     "@fastify/cors": "^11.3.0",
     "@fastify/helmet": "^13.1.0",

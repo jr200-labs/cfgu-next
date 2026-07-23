@@ -1,5 +1,5 @@
 import axios, { type Axios } from 'axios';
-import { KeyValueConfigStore } from '@configu/key-value';
+import { KeyValueConfigStore } from '@jr200-labs/key-value';
 
 export type HashicorpVaultConfigStoreConfiguration = { address?: string; token?: string; engine: string };
 

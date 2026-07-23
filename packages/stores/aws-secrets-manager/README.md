@@ -1,4 +1,4 @@
-# @configu/aws-secrets-manager
+# @jr200-labs/aws-secrets-manager
 
 Integrates the Configu Orchestrator with [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager).
 

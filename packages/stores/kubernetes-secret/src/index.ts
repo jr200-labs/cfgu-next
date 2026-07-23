@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { KubeConfig, CoreV1Api, PatchUtils, type V1Secret } from '@kubernetes/client-node';
-import { KeyValueConfigStore } from '@configu/key-value';
+import { KeyValueConfigStore } from '@jr200-labs/key-value';
 
 export type KubernetesSecretConfigStoreConfiguration = {
   kubeconfig?: string;

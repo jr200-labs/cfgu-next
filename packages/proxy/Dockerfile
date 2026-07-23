@@ -2,7 +2,7 @@
 
 # todo: replace with multi-stage from cli Dockerfile
 
-ARG NODE_VERSION="24.11.0"
+ARG NODE_VERSION="26.3.0"
 FROM node:$NODE_VERSION AS base
 
 LABEL author "dev@configu.com"
@@ -22,12 +22,12 @@ WORKDIR /src
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 
 ARG CONFIGU_VERSION="0.0.0"
-RUN pnpm --filter=@configu/cli exec \
+RUN pnpm --filter=@jr200-labs/cli exec \
   npm --no-git-tag-version --allow-same-version version $CONFIGU_VERSION \
   && pnpm install --ignore-scripts
 
-RUN pnpm --filter=@configu/proxy --if-present run build
-RUN pnpm --filter=@configu/proxy deploy --prod --ignore-scripts /dist
+RUN pnpm --filter=@jr200-labs/proxy --if-present run build
+RUN pnpm --filter=@jr200-labs/proxy deploy --prod --ignore-scripts /dist
 
 FROM node:$NODE_VERSION-alpine AS dist
 RUN npm install -g tsx

@@ -1,4 +1,4 @@
-# @configu/aws-parameter-store
+# @jr200-labs/aws-parameter-store
 
 Integrates the Configu Orchestrator with [AWS Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html).
 

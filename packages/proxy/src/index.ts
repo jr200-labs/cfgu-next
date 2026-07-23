@@ -9,8 +9,8 @@ import BearerAuth from '@fastify/bearer-auth';
 import Swagger, { FastifyDynamicSwaggerOptions } from '@fastify/swagger';
 import SwaggerUI from '@scalar/fastify-api-reference';
 
-import { JSONSchema } from '@configu/sdk';
-import { ConfiguInterface, ConfiguFileInterfaceConfig, configuFilesApi } from '@configu/common';
+import { JSONSchema } from '@jr200-labs/sdk';
+import { ConfiguInterface, ConfiguFileInterfaceConfig, configuFilesApi } from '@jr200-labs/common';
 
 import packageJson from '../package.json' with { type: 'json' };
 import { routes } from './routes';

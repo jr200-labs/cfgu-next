@@ -1,4 +1,4 @@
-import { _, Config, ConfigStore, ConfigQuery } from '@configu/sdk';
+import { _, Config, ConfigStore, ConfigQuery } from '@jr200-labs/sdk';
 
 export abstract class KeyValueConfigStore extends ConfigStore {
   protected abstract getByKey(key: string): Promise<string>;
