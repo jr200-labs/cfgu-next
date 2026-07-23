@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/jr200-labs/cfgu-next/compare/v1.9.0...v2.0.0) (2026-07-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* require Node 26 and rebrand workspace packages ([#71](https://github.com/jr200-labs/cfgu-next/issues/71))
+
+### Features
+
+* require Node 26 and rebrand workspace packages ([#71](https://github.com/jr200-labs/cfgu-next/issues/71)) ([37448e3](https://github.com/jr200-labs/cfgu-next/commit/37448e3faf7f6bb66319bf16d3d300d1f4ab16f3))
+
 ## [1.9.0](https://github.com/jr200-labs/cfgu-next/compare/v1.8.0...v1.9.0) (2026-07-23)
 
 
