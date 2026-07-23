@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/jr200-labs/cfgu-next/compare/v2.0.0...v2.0.1) (2026-07-23)
+
+
+### Bug Fixes
+
+* support Node engine ranges ([#73](https://github.com/jr200-labs/cfgu-next/issues/73)) ([6e487b4](https://github.com/jr200-labs/cfgu-next/commit/6e487b46051c54bb58a7afe93564458f1e20b365))
+
 ## [2.0.0](https://github.com/jr200-labs/cfgu-next/compare/v1.9.0...v2.0.0) (2026-07-23)
 
 
