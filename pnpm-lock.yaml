@@ -6,9 +6,7 @@ settings:
   injectWorkspacePackages: true
 
 patchedDependencies:
-  '@npmcli/run-script':
-    hash: 6f33e535691c62e9f6dd1e222664a0e7cb98ee8e04af8e9ac2fe4a8913ee682b
-    path: patches/@npmcli__run-script.patch
+  '@npmcli/run-script': 6f33e535691c62e9f6dd1e222664a0e7cb98ee8e04af8e9ac2fe4a8913ee682b
 
 importers:
 
