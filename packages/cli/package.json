@@ -19,7 +19,7 @@
     "@pnpm/os.env.path-extender": "^2.0.3",
     "adm-zip": "^0.6.0",
     "clipanion": "^4.0.0-rc.4",
-    "get-stdin": "^9.0.0",
+    "get-stdin": "^10.0.0",
     "open": "^10.2.0",
     "open-editor": "^5.1.0",
     "openid-client": "^5.7.1",
