@@ -26,7 +26,7 @@ export const normalizeInput = (
       debug('normalizeInput', { input, source, result });
       return result;
     }
-    if (Object.keys(TemplateProviders).includes(url.protocol.slice(0, -1))) {
+    if (TemplateProviders.has(url.protocol.slice(0, -1))) {
       const result = { type: 'template' as const, path: input };
       debug('normalizeInput', { input, source, result });
       return result;
