@@ -35,6 +35,8 @@ export default defineConfig([
     rules: {
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-unused-vars': 'warn',
+      'no-useless-assignment': 'off',
+      'preserve-caught-error': 'off',
       'import-x/namespace': ['error', { allowComputed: true }],
     },
   },
