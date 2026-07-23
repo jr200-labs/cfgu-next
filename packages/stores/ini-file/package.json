@@ -10,7 +10,7 @@
   "dependencies": {
     "@configu/file": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "ini": "^5.0.0"
+    "ini": "^7.0.0"
   },
   "devDependencies": {
     "@types/ini": "^4.1.1"
