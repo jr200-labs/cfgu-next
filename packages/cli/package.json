@@ -16,7 +16,7 @@
     "@configu/common": "workspace:*",
     "@configu/formatters": "workspace:*",
     "@configu/sdk": "workspace:*",
-    "@pnpm/os.env.path-extender": "^2.0.3",
+    "@pnpm/os.env.path-extender": "^3.0.1",
     "adm-zip": "^0.6.0",
     "clipanion": "^4.0.0-rc.4",
     "get-stdin": "^10.0.0",
