@@ -6,7 +6,7 @@ index 1c9f02c062f72645b75947204a53457e181384e4..08f3e0ab44254a6aed029f4f34f712ba
  const setPATH = require('./set-path.js')
  const { resolve } = require('path')
  
--let npm_config_node_gyp
+-let npmConfigNodeGyp
 -
  const makeSpawnArgs = options => {
    const {
@@ -17,13 +17,13 @@ index 1c9f02c062f72645b75947204a53457e181384e4..08f3e0ab44254a6aed029f4f34f712ba
  
 -  if (nodeGyp) {
 -    // npm already pulled this from env and passes it in to options
--    npm_config_node_gyp = nodeGyp
+-    npmConfigNodeGyp = nodeGyp
 -  } else if (env.npm_config_node_gyp) {
 -    // legacy mode for standalone user
--    npm_config_node_gyp = env.npm_config_node_gyp
+-    npmConfigNodeGyp = env.npm_config_node_gyp
 -  } else {
 -    // default
--    npm_config_node_gyp = require.resolve('node-gyp/bin/node-gyp.js')
+-    npmConfigNodeGyp = require.resolve('node-gyp/bin/node-gyp.js')
 -  }
 -
    const spawnEnv = setPATH(path, binPaths, {
@@ -33,7 +33,7 @@ index 1c9f02c062f72645b75947204a53457e181384e4..08f3e0ab44254a6aed029f4f34f712ba
      npm_package_json: resolve(path, 'package.json'),
      npm_lifecycle_event: event,
      npm_lifecycle_script: cmd,
--    npm_config_node_gyp,
+-    npm_config_node_gyp: npmConfigNodeGyp,
    })
  
    const spawnOpts = {
