@@ -1,11 +1,11 @@
-import { type SqliteConnectionOptions } from 'typeorm/driver/sqlite/SqliteConnectionOptions.js';
-import * as sqlite3 from 'sqlite3';
+import { type BetterSqlite3DataSourceOptions } from 'typeorm/driver/better-sqlite3/BetterSqlite3DataSourceOptions.js';
 import { ORMConfigStore, type ORMConfigStoreSharedConfiguration } from '@configu/database';
 
-export type SQLiteConfigStoreConfiguration = Omit<SqliteConnectionOptions, 'type'> & ORMConfigStoreSharedConfiguration;
+export type SQLiteConfigStoreConfiguration = Omit<BetterSqlite3DataSourceOptions, 'type'> &
+  ORMConfigStoreSharedConfiguration;
 
 export class SQLiteConfigStore extends ORMConfigStore {
   constructor(configuration: SQLiteConfigStoreConfiguration) {
-    super({ ...configuration, type: 'sqlite', driver: sqlite3 });
+    super({ ...configuration, type: 'better-sqlite3' });
   }
 }
