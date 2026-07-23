@@ -1,1 +1,1 @@
-# @configu/open-feature
+# @jr200-labs/open-feature

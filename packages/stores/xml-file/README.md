@@ -1,4 +1,4 @@
-# @configu/xml-file
+# @jr200-labs/xml-file
 
 Integrates the Configu Orchestrator with [XML files](https://www.w3.org/XML/).
 

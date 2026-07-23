@@ -1,4 +1,4 @@
-# @configu/toml-file
+# @jr200-labs/toml-file
 
 Integrates the Configu Orchestrator with [TOML files](https://toml.io/en/).
 

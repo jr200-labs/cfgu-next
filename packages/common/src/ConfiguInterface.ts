@@ -10,10 +10,10 @@ import {
   ConfigStore,
   NoopConfigStore,
   InMemoryConfigStore,
-} from '@configu/sdk';
-import { JsonFileConfigStore } from '@configu/json-file';
-import { YamlFileConfigStore } from '@configu/yaml-file';
-import { ConfiguPlatformConfigStore } from '@configu/configu-platform';
+} from '@jr200-labs/sdk';
+import { JsonFileConfigStore } from '@jr200-labs/json-file';
+import { YamlFileConfigStore } from '@jr200-labs/yaml-file';
+import { ConfiguPlatformConfigStore } from '@jr200-labs/configu-platform';
 
 import { debug, path, stdenv, CONFIGU_PATHS, validateEngineVersion } from './utils';
 import { ConfiguFile, ConfiguFileInterfaceConfig } from './ConfiguFile';

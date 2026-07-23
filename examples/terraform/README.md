@@ -1,4 +1,4 @@
-# @configu/examples/terraform
+# @jr200-labs/examples/terraform
 
 - Upsert config from `./variables.tf`
   ```bash

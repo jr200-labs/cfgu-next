@@ -1,15 +1,15 @@
 {
-  "name": "@configu/keyv",
+  "name": "@jr200-labs/keyv",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@configu/key-value": "workspace:*",
-    "@configu/sdk": "workspace:*",
+    "@jr200-labs/key-value": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*",
     "keyv": "^5.6.0"
   },
   "devDependencies": {},

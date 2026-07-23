@@ -8,7 +8,7 @@ import {
   JSONSchema,
   JSONSchemaObject,
   FromSchema,
-} from '@configu/sdk';
+} from '@jr200-labs/sdk';
 import {
   debug,
   path as pathe,

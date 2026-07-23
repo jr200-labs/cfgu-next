@@ -1,5 +1,5 @@
 import type { EvaluationContext, Provider } from '@openfeature/server-sdk';
-import { OpenFeatureConfigStore } from '@configu/open-feature';
+import { OpenFeatureConfigStore } from '@jr200-labs/open-feature';
 import { SplitFactory } from '@splitsoftware/splitio';
 // eslint-disable-next-line import-x/no-unresolved
 import { OpenFeatureSplitProvider } from '@splitsoftware/openfeature-js-split-provider/src';

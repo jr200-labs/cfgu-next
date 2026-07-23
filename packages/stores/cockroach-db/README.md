@@ -1,4 +1,4 @@
-# @configu/cockroach-db
+# @jr200-labs/cockroach-db
 
 Integrates the Configu Orchestrator with [CockroachDB](https://www.cockroachlabs.com/).
 

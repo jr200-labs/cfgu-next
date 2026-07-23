@@ -1,1 +1,1 @@
-# @configu/file abstract store
+# @jr200-labs/file abstract store

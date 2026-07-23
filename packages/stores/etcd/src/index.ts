@@ -1,5 +1,5 @@
 import { Etcd3, type IOptions } from 'etcd3';
-import { KeyValueConfigStore } from '@configu/key-value';
+import { KeyValueConfigStore } from '@jr200-labs/key-value';
 
 export type EtcdConfigStoreConfiguration = IOptions;
 

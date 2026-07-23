@@ -68,7 +68,7 @@ fi
 # Resolve the version to install
 version="${CONFIGU_VERSION:-latest}"
 if [ "$version" = "latest" ] || [ "$version" = "next" ]; then
-  # version=$(curl -fsSL "https://registry.npmjs.org/@configu/cli/$version" | sed -e 's/^.*version":"//' | sed -e 's/".*$//')
+  # version=$(curl -fsSL "https://registry.npmjs.org/@jr200-labs/cli/$version" | sed -e 's/^.*version":"//' | sed -e 's/".*$//')
   version=$(curl -fsSL "https://files.configu.com/cli/channels/$version")
 fi
 # Remove leading 'v' if present

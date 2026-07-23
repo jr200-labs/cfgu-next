@@ -1,5 +1,5 @@
-import { FileConfigStore } from '@configu/file';
-import { _, Config } from '@configu/sdk';
+import { FileConfigStore } from '@jr200-labs/file';
+import { _, Config } from '@jr200-labs/sdk';
 import TOML from '@iarna/toml';
 
 export type TomlFileConfigStoreConfiguration = { path: string };

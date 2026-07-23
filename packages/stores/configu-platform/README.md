@@ -1,4 +1,4 @@
-# @configu/configu-platform
+# @jr200-labs/configu-platform
 
 Integrates the Configu Orchestrator with [Configu platform](https://configu.com).
 

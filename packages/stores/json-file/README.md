@@ -1,4 +1,4 @@
-# @configu/json-file
+# @jr200-labs/json-file
 
 Integrates the Configu Orchestrator with [JSON files](https://www.json.org/json-en.html).
 

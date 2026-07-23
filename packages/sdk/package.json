@@ -1,9 +1,9 @@
 {
-  "name": "@configu/sdk",
+  "name": "@jr200-labs/sdk",
   "description": "Configu TypeScript SDK",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },

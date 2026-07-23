@@ -9,7 +9,7 @@ import { addDirToEnvPath } from '@pnpm/os.env.path-extender';
 import * as tar from 'tar';
 import Zip from 'adm-zip';
 import * as prompts from '@clack/prompts';
-import { debug, path, stdenv, semver, color, configuFilesApi, pathExists, glob } from '@configu/common';
+import { debug, path, stdenv, semver, color, configuFilesApi, pathExists, glob } from '@jr200-labs/common';
 import { BaseCommand } from './base';
 
 export class InstallCommand extends BaseCommand {

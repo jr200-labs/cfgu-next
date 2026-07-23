@@ -1,7 +1,7 @@
 import { $, cd } from 'zx';
 import * as fs from 'node:fs/promises';
-import { JSONSchemaObject } from '@configu/sdk';
-import { CfguFile, ConfiguFile, path } from '@configu/common';
+import { JSONSchemaObject } from '@jr200-labs/sdk';
+import { CfguFile, ConfiguFile, path } from '@jr200-labs/common';
 
 const ROOT_PATH = path.join(import.meta.dirname, '..', '..');
 const DIST_PATH = import.meta.dirname;

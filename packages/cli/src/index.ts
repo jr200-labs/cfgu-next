@@ -1,7 +1,7 @@
 import { Cli, Builtins, BaseContext } from 'clipanion';
 import process from 'node:process';
 import { log } from '@clack/prompts';
-import { debug, print } from '@configu/common';
+import { debug, print } from '@jr200-labs/common';
 
 import packageJson from '../../../package.json' with { type: 'json' };
 

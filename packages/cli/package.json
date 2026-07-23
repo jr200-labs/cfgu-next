@@ -1,9 +1,9 @@
 {
-  "name": "@configu/cli",
+  "name": "@jr200-labs/cli",
   "description": "Configu CLI",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
@@ -13,9 +13,9 @@
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
     "@clack/prompts": "^1.7.0",
-    "@configu/common": "workspace:*",
-    "@configu/formatters": "workspace:*",
-    "@configu/sdk": "workspace:*",
+    "@jr200-labs/common": "workspace:*",
+    "@jr200-labs/formatters": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*",
     "@pnpm/os.env.path-extender": "^3.0.1",
     "adm-zip": "^0.6.0",
     "clipanion": "^4.0.0-rc.4",

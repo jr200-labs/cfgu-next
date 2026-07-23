@@ -11,7 +11,7 @@ import {
   UpsertCommandInput,
   UpsertCommandOutput,
   _,
-} from '@configu/sdk';
+} from '@jr200-labs/sdk';
 import {
   ConfiguInterface,
   table,
@@ -23,9 +23,9 @@ import {
   parseYamlFile,
   parseDotenvFile,
   diff,
-} from '@configu/common';
-// import { ConfigFormatter, ConfigFormat } from '@configu/formatters';
-// import { ConfiguPlatformConfigStoreApprovalQueueError } from '@configu/configu';
+} from '@jr200-labs/common';
+// import { ConfigFormatter, ConfigFormat } from '@jr200-labs/formatters';
+// import { ConfiguPlatformConfigStoreApprovalQueueError } from '@jr200-labs/configu';
 import { styleText } from 'node:util';
 import { BaseCommand } from './base';
 

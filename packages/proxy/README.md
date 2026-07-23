@@ -1,4 +1,4 @@
-# @configu/proxy
+# @jr200-labs/proxy
 
 `Configu Proxy` is a multi-channel, stateless server designed for runtime configuration management. It enables dynamic, on-the-fly configuration adjustments without requiring restarts or re-deployments.
 

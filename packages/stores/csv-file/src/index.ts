@@ -1,6 +1,6 @@
-import { type Config } from '@configu/sdk';
+import { type Config } from '@jr200-labs/sdk';
 import { parse, stringify } from 'csv/sync';
-import { FileConfigStore } from '@configu/file';
+import { FileConfigStore } from '@jr200-labs/file';
 
 export type CsvFileConfigStoreConfiguration = { path: string };
 

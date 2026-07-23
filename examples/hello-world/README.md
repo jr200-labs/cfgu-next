@@ -1,4 +1,4 @@
-# @configu/examples/[hello-world](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
+# @jr200-labs/examples/[hello-world](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
 
 ## flow
 

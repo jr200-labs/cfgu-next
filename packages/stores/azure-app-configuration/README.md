@@ -1,4 +1,4 @@
-# @configu/azure-app-configuration
+# @jr200-labs/azure-app-configuration
 
 Integrates Configu with [Azure App Configuration](https://learn.microsoft.com/azure/azure-app-configuration/).
 

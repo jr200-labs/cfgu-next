@@ -1,4 +1,4 @@
-# @configu/ini-file
+# @jr200-labs/ini-file
 
 Integrates the Configu Orchestrator with [INI files](https://en.wikipedia.org/wiki/INI_file).
 

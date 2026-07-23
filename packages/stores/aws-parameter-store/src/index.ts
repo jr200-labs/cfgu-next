@@ -6,7 +6,7 @@ import {
   PutParameterCommand,
   ParameterType,
 } from '@aws-sdk/client-ssm';
-import { KeyValueConfigStore } from '@configu/key-value';
+import { KeyValueConfigStore } from '@jr200-labs/key-value';
 
 export type AWSParameterStoreConfigStoreConfiguration = SSMClientConfig;
 

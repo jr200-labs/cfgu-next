@@ -1,15 +1,15 @@
 {
-  "name": "@configu/launch-darkly",
+  "name": "@jr200-labs/launch-darkly",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@configu/open-feature": "workspace:*",
-    "@configu/sdk": "workspace:*",
+    "@jr200-labs/open-feature": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*",
     "@launchdarkly/node-server-sdk": "^9.12.3",
     "@launchdarkly/openfeature-node-server": "^1.3.5",
     "@openfeature/server-sdk": "^1.22.0"

@@ -1,6 +1,6 @@
 import process from 'node:process';
 import { inspect } from 'node:util';
-import { _ } from '@configu/sdk';
+import { _ } from '@jr200-labs/sdk';
 import Debug from 'debug';
 import color from 'picocolors';
 import { table as Table, getBorderCharacters } from 'table';

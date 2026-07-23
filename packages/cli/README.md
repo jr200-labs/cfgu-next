@@ -1,4 +1,4 @@
-# @configu/cli
+# @jr200-labs/cli
 
 `Configu CLI` is the easiest interface for getting started with Configu. With the command-line interface (CLI), you can easily interact with Configu using a terminal or an automated system, providing you with all the functionality you need to orchestrate your configuration data and beyond.
 

@@ -1,14 +1,14 @@
 {
-  "name": "@configu/open-feature",
+  "name": "@jr200-labs/open-feature",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@configu/sdk": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*",
     "@openfeature/server-sdk": "^1.22.0"
   },
   "devDependencies": {},

@@ -1,4 +1,4 @@
-# @configu/localforage
+# @jr200-labs/localforage
 
 Integrates the Configu Orchestrator with [LocalForage](https://localforage.github.io/localForage/), a fast and simple storage library for offline data, offering a unified API for IndexedDB, WebSQL, and localStorage.
 
@@ -11,12 +11,12 @@ The localForage store needs to be initialized with the [localForage configuratio
 
 ## Usage
 
-localForage only integrates with the browser hence it cannot be used with either `@configu/cli` or `@configu/proxy` and can only be used directly.
+localForage only integrates with the browser hence it cannot be used with either `@jr200-labs/cli` or `@jr200-labs/proxy` and can only be used directly.
 
 ### Example SDK usage
 
 ```js
-import { ConfigSet, ConfigSchema, UpsertCommand, EvalCommand, ExportCommand } from '@configu/sdk';
+import { ConfigSet, ConfigSchema, UpsertCommand, EvalCommand, ExportCommand } from '@jr200-labs/sdk';
 import { LocalForageConfigStore } from '@configu-integrations/localforage';
 
 (async () => {

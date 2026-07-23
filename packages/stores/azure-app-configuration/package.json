@@ -1,8 +1,8 @@
 {
-  "name": "@configu/azure-app-configuration",
+  "name": "@jr200-labs/azure-app-configuration",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
@@ -10,7 +10,7 @@
   "dependencies": {
     "@azure/app-configuration": "^1.12.1",
     "@azure/identity": "^4.13.1",
-    "@configu/sdk": "workspace:*"
+    "@jr200-labs/sdk": "workspace:*"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",

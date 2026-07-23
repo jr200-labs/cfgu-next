@@ -1,14 +1,14 @@
 {
-  "name": "@configu/localforage",
+  "name": "@jr200-labs/localforage",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@configu/key-value": "workspace:*",
+    "@jr200-labs/key-value": "workspace:*",
     "localforage": "^1.10.0"
   },
   "devDependencies": {},

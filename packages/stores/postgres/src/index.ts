@@ -1,5 +1,5 @@
 import { type PostgresDataSourceOptions } from 'typeorm/driver/postgres/PostgresDataSourceOptions.js';
-import { ORMConfigStore, type ORMConfigStoreSharedConfiguration } from '@configu/database';
+import { ORMConfigStore, type ORMConfigStoreSharedConfiguration } from '@jr200-labs/database';
 
 export type PostgreSQLConfigStoreConfiguration = Omit<PostgresDataSourceOptions, 'type'> &
   ORMConfigStoreSharedConfiguration;

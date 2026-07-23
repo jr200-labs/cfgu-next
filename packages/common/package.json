@@ -1,18 +1,18 @@
 {
-  "name": "@configu/common",
+  "name": "@jr200-labs/common",
   "description": "Configu Node.js Common Library",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@configu/configu-platform": "workspace:*",
-    "@configu/json-file": "workspace:*",
-    "@configu/sdk": "workspace:*",
-    "@configu/yaml-file": "workspace:*",
+    "@jr200-labs/configu-platform": "workspace:*",
+    "@jr200-labs/json-file": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*",
+    "@jr200-labs/yaml-file": "workspace:*",
     "@dotenvx/dotenvx": "^2.17.2",
     "@npmcli/arborist": "^10.0.1",
     "@npmcli/package-json": "^8.0.0",
@@ -41,7 +41,7 @@
     "@types/semver": "^7.7.1"
   },
   "engines": {
-    "node": ">=24 <25"
+    "node": ">=26 <27"
   },
   "exports": {
     "./package.json": "./package.json",

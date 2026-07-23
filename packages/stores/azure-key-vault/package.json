@@ -1,8 +1,8 @@
 {
-  "name": "@configu/azure-keyvault",
+  "name": "@jr200-labs/azure-keyvault",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
@@ -10,8 +10,8 @@
   "dependencies": {
     "@azure/identity": "^4.13.1",
     "@azure/keyvault-secrets": "^4.11.2",
-    "@configu/key-value": "workspace:*",
-    "@configu/sdk": "workspace:*"
+    "@jr200-labs/key-value": "workspace:*",
+    "@jr200-labs/sdk": "workspace:*"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",

@@ -53,7 +53,7 @@ Run "${chalk.magenta(`pnpm exec npm pkg set devEngines.runtime.version=${node.lt
   // await $`pnpm exec npm pkg set devEngines.packageManager.version=${pnpm.engine}`.pipe(process.stdout);
 
   // todo: update common engine somehow else
-  // await $`pnpm --filter @configu/common exec npm pkg set engines.node=${node.engine}`.pipe(process.stdout);
+  // await $`pnpm --filter @jr200-labs/common exec npm pkg set engines.node=${node.engine}`.pipe(process.stdout);
   // await $`pnpm exec npm pkg set devEngines.runtime.version=${node.engine}`.pipe(process.stdout);
 
   // let exitCode = 0;

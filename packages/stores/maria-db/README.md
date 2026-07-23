@@ -1,4 +1,4 @@
-# @configu/maria-db
+# @jr200-labs/maria-db
 
 Integrates the Configu Orchestrator with a [MariaDB database](https://mariadb.org/).
 

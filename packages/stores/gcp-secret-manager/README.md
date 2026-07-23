@@ -1,4 +1,4 @@
-# @configu/gcp-secret-manager
+# @jr200-labs/gcp-secret-manager
 
 Integrates the Configu Orchestrator with [Google Cloud Secret Manager](https://cloud.google.com/secret-manager).
 

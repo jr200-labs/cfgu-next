@@ -2,7 +2,7 @@ import { Command, Option } from 'clipanion';
 import { discovery, initiateDeviceAuthorization, pollDeviceAuthorizationGrant, ResponseBodyError } from 'openid-client';
 import { log, isCancel, cancel, confirm, select } from '@clack/prompts';
 import open from 'open';
-import { configuPlatformApi, CONFIGU_DEFAULT_API_URL, CONFIGU_DEFAULT_APP_URL } from '@configu/common';
+import { configuPlatformApi, CONFIGU_DEFAULT_API_URL, CONFIGU_DEFAULT_APP_URL } from '@jr200-labs/common';
 import { BaseCommand } from './base';
 
 const AUTH0_DOMAIN = 'configu.us.auth0.com';

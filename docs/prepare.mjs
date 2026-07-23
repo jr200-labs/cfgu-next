@@ -63,10 +63,10 @@ INTEGRATIONS_NAV.pages = ['integrations/overview', ...integrationsNavArray];
 // --- interfaces ---
 const INTERFACES_TITLE = {
   [TypeDocConfig.name]: 'Overview',
-  '@configu/sdk': 'Core SDK',
-  '@configu/integrations': 'Integrations Library',
-  '@configu/common': 'Common Library',
-  '@configu/cli': 'Overview',
+  '@jr200-labs/sdk': 'Core SDK',
+  '@jr200-labs/integrations': 'Integrations Library',
+  '@jr200-labs/common': 'Common Library',
+  '@jr200-labs/cli': 'Overview',
 };
 const README_FILE = `${TypeDocConfig.entryFileName}${TypeDocConfig.fileExtension}`;
 const REF_FILE = `globals${TypeDocConfig.fileExtension}`;
@@ -162,7 +162,7 @@ const INTERFACES_SDK_NAV = MINT_CONTENT.navigation
 INTERFACES_SDK_NAV.pages = sdkNavPages;
 
 // Process `oclif readme` output file to create the MDX file for the docs
-const CLI_PKG = '@configu/cli';
+const CLI_PKG = '@jr200-labs/cli';
 
 await prepareREADME({
   source: 'packages/cli/README.md',

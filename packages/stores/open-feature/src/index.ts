@@ -1,4 +1,4 @@
-import { ConfigStore, type ConfigQuery, type Config } from '@configu/sdk';
+import { ConfigStore, type ConfigQuery, type Config } from '@jr200-labs/sdk';
 import {
   OpenFeature,
   type EvaluationContext,

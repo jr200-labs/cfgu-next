@@ -1,8 +1,8 @@
 /* cspell:disable */
-import { KeyValueConfigStore } from '@configu/key-value';
+import { KeyValueConfigStore } from '@jr200-labs/key-value';
 import type Keyv from 'src/index';
 
-// TODO: rework KeyvConfigStoreConfiguration for CLI support and then add KeyvConfigStore to `@configu/lib` & `@configu/cli`. Adapters are missing (https://www.npmjs.com/package/keyv#official-storage-adapters). Consider this strategy for reworking KeyvConfigStoreConfiguration: https://github.com/configu/configu/pull/167#discussion_r1268823038.
+// TODO: rework KeyvConfigStoreConfiguration for CLI support and then add KeyvConfigStore to `@jr200-labs/lib` & `@jr200-labs/cli`. Adapters are missing (https://www.npmjs.com/package/keyv#official-storage-adapters). Consider this strategy for reworking KeyvConfigStoreConfiguration: https://github.com/configu/configu/pull/167#discussion_r1268823038.
 export type KeyvConfigStoreConfiguration = { keyvInstance: Keyv };
 
 /**
@@ -13,7 +13,7 @@ export type KeyvConfigStoreConfiguration = { keyvInstance: Keyv };
  * @example
  * ```ts
  * import Keyv from 'keyv';
- * import { KeyvConfigStore } from '@configu/ts-node';
+ * import { KeyvConfigStore } from '@jr200-labs/ts-node';
  * const keyvMongo = new Keyv('mongodb://user:pass@localhost:27017/dbname');
  * const configStore = new KeyvConfigStore({ keyvInstance: keyvMongo });
  * ```

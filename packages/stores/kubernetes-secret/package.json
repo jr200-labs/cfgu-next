@@ -1,14 +1,14 @@
 {
-  "name": "@configu/kubernetes-secret",
+  "name": "@jr200-labs/kubernetes-secret",
   "version": "0.0.0",
   "author": {
-    "name": "@configu/dev",
+    "name": "@jr200-labs/dev",
     "email": "dev@configu.com",
     "url": "https://configu.com"
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@configu/key-value": "workspace:*",
+    "@jr200-labs/key-value": "workspace:*",
     "@kubernetes/client-node": "^1.4.0",
     "lodash": "^4.18.1"
   },

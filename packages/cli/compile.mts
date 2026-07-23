@@ -1,6 +1,6 @@
 import { build } from 'esbuild';
 
-console.log('Building @configu/cli...');
+console.log('Building @jr200-labs/cli...');
 
 await build({
   entryPoints: ['src/configu.ts'],
@@ -22,4 +22,4 @@ await build({
   splitting: false,
 });
 
-console.log('✅ @configu/cli built successfully');
+console.log('✅ @jr200-labs/cli built successfully');

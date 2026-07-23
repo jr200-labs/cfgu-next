@@ -12,9 +12,9 @@ import {
   EvalCommandOutput,
   EvaluatedConfig,
   EvaluatedConfigOrigin,
-} from '@configu/sdk';
-import { print, table, readFile, color, path, normalizeInput } from '@configu/common';
-import { ConfigFormatter, ConfigFormat } from '@configu/formatters';
+} from '@jr200-labs/sdk';
+import { print, table, readFile, color, path, normalizeInput } from '@jr200-labs/common';
+import { ConfigFormatter, ConfigFormat } from '@jr200-labs/formatters';
 
 import { BaseCommand } from './base';
 

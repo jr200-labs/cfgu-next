@@ -1,5 +1,5 @@
 import { type MysqlDataSourceOptions } from 'typeorm/driver/mysql/MysqlDataSourceOptions.js';
-import { ORMConfigStore, type ORMConfigStoreSharedConfiguration } from '@configu/database';
+import { ORMConfigStore, type ORMConfigStoreSharedConfiguration } from '@jr200-labs/database';
 
 // * TypeORM uses the mysql driver under the hood for MariaDB
 export type MariaDBConfigStoreConfiguration = Omit<MysqlDataSourceOptions, 'type'> & ORMConfigStoreSharedConfiguration;

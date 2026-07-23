@@ -1,4 +1,4 @@
-# @configu/cloud-bees
+# @jr200-labs/cloud-bees
 
 Integrates the Configu Orchestrator with [CloudBees Feature Management](https://docs.cloudbees.com/docs/cloudbees-feature-management/latest).
 
