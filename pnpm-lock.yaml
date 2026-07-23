@@ -334,8 +334,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1(ajv@8.20.0)
       chai:
-        specifier: ^5.3.3
-        version: 5.3.3
+        specifier: ^6.2.2
+        version: 6.2.2
       jest-extended:
         specifier: ^5.0.3
         version: 5.0.3
@@ -3477,6 +3477,10 @@ packages:
 
   chai@5.3.3:
     resolution: {integrity: sha512-4zNhdJD/iOjSH0A05ea+Ke6MU5mmpQcbQsSOkgdaUMJ9zTlDTD/GYlwohmIE2u0gaxHYiVHEn1Fw9mZ/ktJWgw==}
+    engines: {node: '>=18'}
+
+  chai@6.2.2:
+    resolution: {integrity: sha512-NUPRluOfOiTKBKvWPtSD4PhFvWCqOi0BGStNWs57X9js7XGTprSmFoz5F0tWhR4WPjNeR9jXqdC7/UpSJTnlRg==}
     engines: {node: '>=18'}
 
   chalk-template@1.1.2:
@@ -8746,7 +8750,7 @@ snapshots:
       acorn-walk: 8.3.5
       ajv: 8.20.0
       ajv-formats: 3.0.1(ajv@8.20.0)
-      chai: 5.3.3
+      chai: 6.2.2
       jest-extended: 5.0.3
       json-schema-to-ts: 3.1.1
       lodash: 4.18.1
@@ -11724,6 +11728,8 @@ snapshots:
       deep-eql: 5.0.2
       loupe: 3.2.1
       pathval: 2.0.1
+
+  chai@6.2.2: {}
 
   chalk-template@1.1.2:
     dependencies:
