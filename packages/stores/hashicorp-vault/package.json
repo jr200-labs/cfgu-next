@@ -10,7 +10,7 @@
   "dependencies": {
     "@jr200-labs/key-value": "workspace:*",
     "@jr200-labs/sdk": "workspace:*",
-    "axios": "^1.18.1"
+    "axios": "^1.19.0"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",
