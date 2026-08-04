@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.0](https://github.com/jr200-labs/cfgu-next/compare/v2.0.1...v2.1.0) (2026-08-04)
+
+
+### Features
+
+* **deps:** update dependency cosmiconfig to v10 ([#79](https://github.com/jr200-labs/cfgu-next/issues/79)) ([877274b](https://github.com/jr200-labs/cfgu-next/commit/877274b63625a3fbbc0371d35b8e687bbbf7d38e))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#75](https://github.com/jr200-labs/cfgu-next/issues/75)) ([9e318c6](https://github.com/jr200-labs/cfgu-next/commit/9e318c67c13caed266f36b7576804aa7e6e73c77))
+* **deps:** update all non-major dependencies ([#77](https://github.com/jr200-labs/cfgu-next/issues/77)) ([8e13cbc](https://github.com/jr200-labs/cfgu-next/commit/8e13cbc6bdd622e572c391a7aebb5f575ece0add))
+* **deps:** update docker/dockerfile docker tag to v1.26 ([#78](https://github.com/jr200-labs/cfgu-next/issues/78)) ([8e411da](https://github.com/jr200-labs/cfgu-next/commit/8e411da1415726c49b46f4c367450868fc4a68fe))
+
 ## [2.0.1](https://github.com/jr200-labs/cfgu-next/compare/v2.0.0...v2.0.1) (2026-07-23)
 
 
