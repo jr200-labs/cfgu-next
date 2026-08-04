@@ -23,7 +23,7 @@ const getCurrentNodeLTSVersion = async () => {
     current: process.versions.node,
   };
   const pnpm = {
-    engine: packageJson.devEngines.packageManager.version,
+    engine: packageJson.packageManager.replace(/^pnpm@/, ''),
     // lts: 'pnpm has its own version management',
     current: (await $`pnpm --version`).stdout.trim(),
   };
@@ -48,9 +48,6 @@ Run "${chalk.magenta(`pnpm exec npm pkg set devEngines.runtime.version=${node.lt
     content = content.replace(/PNPM_VERSION="(.*)"/, `PNPM_VERSION="${pnpm.engine}"`);
     await fs.writeFile(file, content);
   }
-
-  // await $`pnpm exec npm pkg set packageManager=pnpm@${pnpm.engine}`.pipe(process.stdout);
-  // await $`pnpm exec npm pkg set devEngines.packageManager.version=${pnpm.engine}`.pipe(process.stdout);
 
   // todo: update common engine somehow else
   // await $`pnpm --filter @jr200-labs/common exec npm pkg set engines.node=${node.engine}`.pipe(process.stdout);

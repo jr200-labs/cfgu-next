@@ -45,11 +45,6 @@
       "name": "node",
       "version": "26.3.0",
       "onFail": "error"
-    },
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.20.0",
-      "onFail": "error"
     }
   },
   "files": [
