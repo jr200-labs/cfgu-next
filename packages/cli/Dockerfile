@@ -14,7 +14,7 @@ LABEL author "dev@configu.com"
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 
-ARG PNPM_VERSION="10.21.0"
+ARG PNPM_VERSION="11.20.0"
 RUN --mount=type=cache,id=npm-cache,target=/root/.npm \
     npm install -g corepack@latest && \
     corepack enable && \
