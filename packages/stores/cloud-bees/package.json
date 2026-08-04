@@ -10,7 +10,7 @@
   "dependencies": {
     "@jr200-labs/open-feature": "workspace:*",
     "@jr200-labs/sdk": "workspace:*",
-    "@openfeature/server-sdk": "^1.22.0",
+    "@openfeature/server-sdk": "^1.23.0",
     "cloudbees-openfeature-provider-node": "^1.0.1"
   },
   "devDependencies": {
