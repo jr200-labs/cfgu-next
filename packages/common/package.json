@@ -13,10 +13,10 @@
     "@jr200-labs/json-file": "workspace:*",
     "@jr200-labs/sdk": "workspace:*",
     "@jr200-labs/yaml-file": "workspace:*",
-    "@dotenvx/dotenvx": "^2.18.1",
-    "@npmcli/arborist": "^10.0.1",
+    "@dotenvx/dotenvx": "^2.19.1",
+    "@npmcli/arborist": "^10.0.2",
     "@npmcli/package-json": "^8.0.0",
-    "axios": "^1.18.1",
+    "axios": "^1.19.0",
     "debug": "^4.4.3",
     "diff": "^9.0.0",
     "find-up": "^8.0.0",
@@ -38,7 +38,7 @@
     "@types/is-glob": "^4.0.4",
     "@types/npmcli__arborist": "^6.3.3",
     "@types/npmcli__package-json": "^4.0.4",
-    "@types/semver": "^7.7.1"
+    "@types/semver": "^7.8.0"
   },
   "engines": {
     "node": ">=26 <27"
