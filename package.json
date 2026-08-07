@@ -35,7 +35,7 @@
     "prettier": "^3.9.6",
     "shx": "^0.4.0",
     "syncpack": "^15.3.2",
-    "tsx": "^4.23.5",
+    "tsx": "^4.23.11",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
     "typescript-eslint": "^8.66.0",
     "zx": "^8.8.5"
