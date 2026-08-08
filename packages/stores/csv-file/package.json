@@ -10,7 +10,7 @@
   "dependencies": {
     "@jr200-labs/file": "workspace:*",
     "@jr200-labs/sdk": "workspace:*",
-    "csv": "^6.6.2"
+    "csv": "^6.6.3"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",
