@@ -10,7 +10,7 @@
   "dependencies": {
     "@jr200-labs/key-value": "workspace:*",
     "@jr200-labs/sdk": "workspace:*",
-    "@google-cloud/secret-manager": "^6.3.0"
+    "@google-cloud/secret-manager": "^7.0.0"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",
