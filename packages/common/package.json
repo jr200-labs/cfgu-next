@@ -13,7 +13,7 @@
     "@jr200-labs/json-file": "workspace:*",
     "@jr200-labs/sdk": "workspace:*",
     "@jr200-labs/yaml-file": "workspace:*",
-    "@dotenvx/dotenvx": "^2.20.1",
+    "@dotenvx/dotenvx": "^2.21.0",
     "@npmcli/arborist": "^10.0.2",
     "@npmcli/package-json": "^8.0.0",
     "axios": "^1.19.0",

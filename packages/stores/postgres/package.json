@@ -10,7 +10,7 @@
   "dependencies": {
     "@jr200-labs/database": "workspace:*",
     "@jr200-labs/sdk": "workspace:*",
-    "pg": "^8.22.0"
+    "pg": "^8.23.0"
   },
   "devDependencies": {
     "typeorm": "^1.1.0"
