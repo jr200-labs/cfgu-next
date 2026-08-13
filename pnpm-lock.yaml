@@ -772,8 +772,8 @@ importers:
         specifier: workspace:*
         version: link:../key-value
       '@kubernetes/client-node':
-        specifier: ^1.4.0
-        version: 1.4.0(encoding@0.1.13)(supports-color@8.1.1)
+        specifier: ^2.0.0
+        version: 2.0.0(supports-color@8.1.1)
       lodash:
         specifier: ^4.18.1
         version: 4.18.1
@@ -2095,8 +2095,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@kubernetes/client-node@1.4.0':
-    resolution: {integrity: sha512-Zge3YvF7DJi264dU1b3wb/GmzR99JhUpqTvp+VGHfwZT+g7EOOYNScDJNZwXy9cszyIGPIs0VHr+kk8e95qqrA==}
+  '@kubernetes/client-node@2.0.0':
+    resolution: {integrity: sha512-Jx2cRxEVb4XkDNiR/cg8SX9dH6ZHdMhKmZdQcfhn2vdBWHdb2ldwM0P3I0dK4msYhFmC6TCODsNHH144IpA06w==}
 
   '@launchdarkly/js-sdk-common@2.25.2':
     resolution: {integrity: sha512-l/OJiIGnLS6Qt6J/Lc3KgUXL4vAES5wsxIgNZcw3yCUbDEuTyVR9Qya9Aqy1klg2kF1VsHiY2wvaKimlIZK7+g==}
@@ -2730,6 +2730,9 @@ packages:
 
   '@types/node@24.13.3':
     resolution: {integrity: sha512-Dh8vAsV36ig5wa9OX4pXvMc9D3Veibfw2wix0CUwYODLD8nkj9UsLjASr49nPg+2eKzxhBV+v7L8pXvT4e639Q==}
+
+  '@types/node@26.2.0':
+    resolution: {integrity: sha512-5IviulTZeRNp2vAJ514cc/HUlY5nZ9fCbq9DMyC52BrhFZACo3nI0R7qBxhQmo/d27NFe96ur/b7Wwxklda+kg==}
 
   '@types/npm-package-arg@6.1.4':
     resolution: {integrity: sha512-vDgdbMy2QXHnAruzlv68pUtXCjmqUk3WrBAsRboRovsOmxbfn/WiYCjmecyKjGztnMps5dWp4Uq2prp+Ilo17Q==}
@@ -5298,6 +5301,10 @@ packages:
     resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
     hasBin: true
 
+  js-yaml@5.2.3:
+    resolution: {integrity: sha512-n+mUVyUX5bVv7G/G2zyIHOhdxfuU1dY2NOFzTQUWiMUbFss8b57NFlgCCaggU78wSw5KVS9cllzeLyzyR+n5nw==}
+    hasBin: true
+
   jsep@1.4.0:
     resolution: {integrity: sha512-B7qPcEVE3NVkmSJbaYxvv4cHkVW7DQsZz13pUMrfS8z8Q/BuShN+gcTXrUlPiGqM2/t/EEaI030bpxMqY8gMlw==}
     engines: {node: '>= 10.16.0'}
@@ -7612,6 +7619,9 @@ packages:
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
+  undici-types@8.3.0:
+    resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
+
   undici@8.8.0:
     resolution: {integrity: sha512-ubshXMXwF3MQIMF1y/WxZdNBnjEKeSg2wF5mcGUtU55YTw34tnVVpKRlLf7ruDXZ5344KokPVX4RBx1wJm64Bw==}
     engines: {node: '>=22.19.0'}
@@ -9269,28 +9279,27 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@kubernetes/client-node@1.4.0(encoding@0.1.13)(supports-color@8.1.1)':
+  '@kubernetes/client-node@2.0.0(supports-color@8.1.1)':
     dependencies:
       '@types/js-yaml': 4.0.9
-      '@types/node': 24.13.3
-      '@types/node-fetch': 2.6.13
+      '@types/node': 26.2.0
       '@types/stream-buffers': 3.0.8
       form-data: 4.0.6
       hpagent: 1.2.0
       isomorphic-ws: 5.0.0(ws@8.18.3)
-      js-yaml: 4.3.1
+      js-yaml: 5.2.3
       jsonpath-plus: 10.3.0
-      node-fetch: 2.7.0(encoding@0.1.13)
       openid-client: 6.8.5
       rfc4648: 1.5.4
-      socks-proxy-agent: 8.0.5(supports-color@8.1.1)
+      socks: 2.8.7
+      socks-proxy-agent: 10.1.0(supports-color@8.1.1)
       stream-buffers: 3.0.3
       tar-fs: 3.1.1
+      undici: 8.8.0
       ws: 8.18.3
     transitivePeerDependencies:
       - bare-buffer
       - bufferutil
-      - encoding
       - react-native-b4a
       - supports-color
       - utf-8-validate
@@ -10437,6 +10446,10 @@ snapshots:
   '@types/node@24.13.3':
     dependencies:
       undici-types: 7.18.2
+
+  '@types/node@26.2.0':
+    dependencies:
+      undici-types: 8.3.0
 
   '@types/npm-package-arg@6.1.4': {}
 
@@ -13319,6 +13332,10 @@ snapshots:
       esprima: 4.0.1
 
   js-yaml@4.3.1:
+    dependencies:
+      argparse: 2.0.1
+
+  js-yaml@5.2.3:
     dependencies:
       argparse: 2.0.1
 
@@ -16340,6 +16357,8 @@ snapshots:
       which-boxed-primitive: 1.1.1
 
   undici-types@7.18.2: {}
+
+  undici-types@8.3.0: {}
 
   undici@8.8.0: {}
 
