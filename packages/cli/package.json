@@ -22,7 +22,7 @@
     "get-stdin": "^10.0.0",
     "open": "^11.0.1",
     "open-editor": "^6.0.0",
-    "openid-client": "^6.8.5",
+    "openid-client": "^6.8.6",
     "tar": "^7.5.22",
     "typanion": "^3.14.0"
   },
