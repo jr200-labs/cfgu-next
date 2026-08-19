@@ -1,5 +1,27 @@
 # Changelog
 
+## [2.2.0](https://github.com/jr200-labs/cfgu-next/compare/v2.1.0...v2.2.0) (2026-08-19)
+
+
+### Features
+
+* **deps:** update dependency @google-cloud/secret-manager to v7 ([#86](https://github.com/jr200-labs/cfgu-next/issues/86)) ([eed21b0](https://github.com/jr200-labs/cfgu-next/commit/eed21b0ab206616a4ec93fe978372538532176be))
+* **deps:** update dependency @kubernetes/client-node to v2 ([#89](https://github.com/jr200-labs/cfgu-next/issues/89)) ([bf34d07](https://github.com/jr200-labs/cfgu-next/commit/bf34d07828a0cd3be7f1a99f5087d32ab57ad765))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#80](https://github.com/jr200-labs/cfgu-next/issues/80)) ([1365580](https://github.com/jr200-labs/cfgu-next/commit/1365580e55c8369ce753b6896d5da227e8a6837b))
+* **deps:** update all non-major dependencies ([#82](https://github.com/jr200-labs/cfgu-next/issues/82)) ([ffb2435](https://github.com/jr200-labs/cfgu-next/commit/ffb24358427f8d6b82180d11de6644d36d10d418))
+* **deps:** update all non-major dependencies ([#84](https://github.com/jr200-labs/cfgu-next/issues/84)) ([345f1c0](https://github.com/jr200-labs/cfgu-next/commit/345f1c0d3ebb799fc810752ba818a0fcf96891e8))
+* **deps:** update all non-major dependencies ([#85](https://github.com/jr200-labs/cfgu-next/issues/85)) ([4f0372d](https://github.com/jr200-labs/cfgu-next/commit/4f0372d83a381e490c557fe76d12bbe40e42c039))
+* **deps:** update all non-major dependencies ([#88](https://github.com/jr200-labs/cfgu-next/issues/88)) ([e856a0d](https://github.com/jr200-labs/cfgu-next/commit/e856a0d0ff3fe33331c1e4e32cfdcdeb7088df1d))
+* **deps:** update all non-major dependencies ([#90](https://github.com/jr200-labs/cfgu-next/issues/90)) ([2e2d666](https://github.com/jr200-labs/cfgu-next/commit/2e2d66689becb965683bf2944fb4b04ee3c519d5))
+* **deps:** update all non-major dependencies ([#92](https://github.com/jr200-labs/cfgu-next/issues/92)) ([1cca704](https://github.com/jr200-labs/cfgu-next/commit/1cca70404b3201df38032473aa1676ac8c357cfe))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.36 ([#83](https://github.com/jr200-labs/cfgu-next/issues/83)) ([9e317f6](https://github.com/jr200-labs/cfgu-next/commit/9e317f6cbfe15c10a4fdcf33ed6e7fa2f81af039))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.37 ([#87](https://github.com/jr200-labs/cfgu-next/issues/87)) ([10d065f](https://github.com/jr200-labs/cfgu-next/commit/10d065f50b6744dfe39484d5ace94f2ebdb6f848))
+* **deps:** update dependency jr200-labs/github-action-templates to shared-v0.1.38 ([#91](https://github.com/jr200-labs/cfgu-next/issues/91)) ([1e9e644](https://github.com/jr200-labs/cfgu-next/commit/1e9e644459739b26c14c2e6c9b00b8d4b7dfcd67))
+
 ## [2.1.0](https://github.com/jr200-labs/cfgu-next/compare/v2.0.1...v2.1.0) (2026-08-04)
 
 
