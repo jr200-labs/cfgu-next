@@ -8,7 +8,7 @@
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@azure/identity": "^4.13.1",
+    "@azure/identity": "^4.13.2",
     "@azure/keyvault-secrets": "^4.11.2",
     "@jr200-labs/key-value": "workspace:*",
     "@jr200-labs/sdk": "workspace:*"
