@@ -20,9 +20,9 @@
     "adm-zip": "^0.6.0",
     "clipanion": "^4.0.0-rc.4",
     "get-stdin": "^10.0.0",
-    "open": "^11.0.1",
+    "open": "^11.0.2",
     "open-editor": "^6.0.0",
-    "openid-client": "^6.8.6",
+    "openid-client": "^6.8.8",
     "tar": "^7.5.22",
     "typanion": "^3.14.0"
   },

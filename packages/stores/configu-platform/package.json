@@ -9,7 +9,7 @@
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
     "@jr200-labs/sdk": "workspace:*",
-    "axios": "^1.19.0"
+    "axios": "^1.20.0"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",
