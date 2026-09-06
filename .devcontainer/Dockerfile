@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.26-labs
+# syntax=docker/dockerfile:1.27-labs
 
 ARG NODE_VERSION="26.3.0"
 FROM node:${NODE_VERSION}
