@@ -10,7 +10,7 @@
   "dependencies": {
     "@jr200-labs/sdk": "workspace:*",
     "reflect-metadata": "^0.2.2",
-    "typeorm": "^1.1.0"
+    "typeorm": "^1.1.1"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",
