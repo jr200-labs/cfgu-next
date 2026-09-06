@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.26-labs
+# syntax=docker/dockerfile:1.27-labs
 
 # todo: replace with multi-stage from cli Dockerfile
 
