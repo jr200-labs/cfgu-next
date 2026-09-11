@@ -11,7 +11,7 @@
     "@jr200-labs/open-feature": "workspace:*",
     "@jr200-labs/sdk": "workspace:*",
     "@launchdarkly/node-server-sdk": "^9.13.1",
-    "@launchdarkly/openfeature-node-server": "^1.4.0",
+    "@launchdarkly/openfeature-node-server": "^2.0.3",
     "@openfeature/server-sdk": "^1.23.0"
   },
   "devDependencies": {},
