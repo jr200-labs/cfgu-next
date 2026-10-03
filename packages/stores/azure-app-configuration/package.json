@@ -8,8 +8,8 @@
   },
   "bugs": "https://github.com/configu/configu/issues",
   "dependencies": {
-    "@azure/app-configuration": "^1.12.1",
-    "@azure/identity": "^4.13.2",
+    "@azure/app-configuration": "^1.13.0",
+    "@azure/identity": "^4.13.3",
     "@jr200-labs/sdk": "workspace:*"
   },
   "devDependencies": {},
