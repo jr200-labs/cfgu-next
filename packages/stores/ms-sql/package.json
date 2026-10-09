@@ -10,8 +10,8 @@
   "dependencies": {
     "@jr200-labs/database": "workspace:*",
     "@jr200-labs/sdk": "workspace:*",
-    "mssql": "^12.7.0",
-    "typeorm": "^1.1.1"
+    "mssql": "^12.7.4",
+    "typeorm": "^1.1.2"
   },
   "devDependencies": {},
   "exports": "./src/index.ts",
