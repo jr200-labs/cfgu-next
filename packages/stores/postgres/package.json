@@ -10,10 +10,10 @@
   "dependencies": {
     "@jr200-labs/database": "workspace:*",
     "@jr200-labs/sdk": "workspace:*",
-    "pg": "^8.23.0"
+    "pg": "^8.23.1"
   },
   "devDependencies": {
-    "typeorm": "^1.1.1"
+    "typeorm": "^1.1.2"
   },
   "exports": "./src/index.ts",
   "files": [
